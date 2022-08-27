@@ -188,16 +188,10 @@ animation-name: title;
   align-items: center;
 
 }
-<<<<<<< HEAD
 .card{
   margin-bottom: 40px;
-  margin-top: 50px;
-  margin-left: 100px;
   
 }
-=======
-
->>>>>>> responsive
 
 .footerlink{
   color: white;
@@ -1502,6 +1496,7 @@ body{
   /*responsive tablet contacto*/
   .navegacion{
     border-bottom: none;
+    
     
   }
   .formulario{
