@@ -1,0 +1,365 @@
+@import "./partials/responsive","./partials/variables","./partials/navindex","./partials/navpaginas","./partials/foot";
+/*estilos de la pagina index.html*/
+.padre{
+    display: grid;
+    grid-template-areas:
+    'header header header header'
+    'barra barra barra barra'
+    'textoizq textoizq imagender imagender'
+    'imagenetexto imagenetexto imagender imagender'
+    'imagenetexto imagenetexto imagender imagender'
+    'contacto contacto contacto contacto';
+    grid-template-rows: auto 60px auto auto auto;
+    grid-template-columns: auto auto auto auto;
+    div {
+        padding: 20px ;
+        font-size: 30px;
+      }
+    
+  /*contenido index*/
+
+  .caja1{
+    grid-area: textoizq;
+    background-color: $colorFondo;
+    .textocaja1{
+        font-size: 25px;
+        color:  $colorLetra;
+        margin-top: 100px;
+        margin-left: 180px;
+        text-align: left;
+        width: 700px;
+        border: 1px solid $bordes;
+        border-radius: 10px;
+        #texto1{
+            display: $display;
+            justify-content: center;
+          }
+  }
+}
+  .caja2{
+    display: $display;
+    flex-direction: column;
+    grid-area: imagender;
+    background-color: $colorFondo;
+    align-items: center;
+    border: 2px solid $bordes;
+    border-top: none;
+    border-bottom: none;
+    
+      .imagenes{
+        border: 2px solid white;
+        border-radius: 50%;
+        margin: 10px;
+        margin-left: -60px;
+        margin-right: -60px;
+      }
+      #imagen1{
+        width: 300px;
+      }
+      #imagen2{
+          width: 400px;
+      }
+      #imagen3{
+        width: 340px;
+      }
+  }
+
+  .caja3{
+    display: $display;
+    flex-direction: column;
+    grid-area: imagenetexto;
+    background-color: $colorFondo;
+      align-items: center;
+      .imagen789{
+
+        width: 500px;
+        border-radius: 20px;
+        box-shadow: 0 0 5px red;
+      
+      }
+      .textoImagen{
+        color: $colorLetra;
+        font-size: 25px;
+      }
+  }
+
+  
+}
+
+/*estilos de la pagina contacto.html*/
+
+.padre2{
+    display: grid;
+    grid-template-areas:
+    'header header header header'
+    'barra barra barra barra'
+    'formulario formulario formulario formulario'
+    'contacto contacto contacto contacto';
+    grid-template-rows: auto 60px auto auto ;
+    grid-template-columns: auto auto auto auto;
+    div {
+        padding: 20px ;
+        font-size: 20px;
+      }
+     
+  /*contenido pagina contacto.html*/
+  .formulario{
+    display: $display;
+    justify-content: center;
+    grid-area: formulario;
+    background-color: $colorFondo;
+     #contacto_nav{
+        display: $display;
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 10px;
+        width: 600px;
+        height: 600px;
+        border: 2px solid $bordes;
+        margin-top: 50px;
+        .formulario2{
+            display: $display;
+            flex-direction: column;
+            color: $colorLetra;
+          }
+          .formulario1{
+            width: 200px;
+          }
+      }
+      #label_comentario{
+        color:  $colorLetra;
+        margin-top: 10px;
+        position:relative;
+        left: 30px;
+      }
+      
+      #comentario{
+        border-radius: 10px;
+        width: 450px;
+        height: 300px;
+        position: relative;
+        left: 20px;
+      }
+      #enviar{
+        width: 70px;
+      }
+  
+  }
+  
+    }
+
+ /*estilos de la pagina nosotros.html*/
+
+ .padre3{
+    display: grid;
+    grid-template-areas:
+    'header header header header'
+    'barra barra barra barra'
+    'mapa mapa textoNosotros textoNosotros'
+    'mapa mapa textoNosotros textoNosotros'
+    'contacto contacto contacto contacto';
+  
+    grid-template-rows: auto 60px 500px auto ;
+    grid-template-columns: auto auto auto auto;
+    div {
+        padding: 20px ;
+        font-size: 20px;
+      }
+      
+  /*contenido nosotros.html*/
+  .mapa{
+    display: $display;
+    grid-area: mapa;
+    background-color: $colorFondo;
+    .mapalocal{
+        display: $display;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 250px;
+      
+        color: $colorLetra;
+        font-size: 35px;
+        #mapa1{
+            width: 400px;
+            height: 300px;
+            border-radius: 10px;
+          }
+      }
+  }
+  .textoNosotros{
+    grid-area: textoNosotros;
+    background-color: $colorFondo;
+    .ubicacion{
+        display: $display;
+        line-height: 50px;
+        margin-top: 150px;
+        color: $colorLetra;
+        font-size: 25px;
+        justify-content: center;
+      }
+  }
+  
+  }
+
+
+
+  /*estilos de la pagina ofertas.html*/
+
+
+  .padre4{
+    display: grid;
+    grid-template-areas:
+    'header header header header'
+    'barra barra barra barra'
+    'img img textoventa textoventa'
+    'img img textoventa textoventa'
+    'contacto contacto contacto contacto';
+    background-color: $colorFondo;
+    grid-template-rows: auto 60px 2500px auto ;
+    grid-template-columns: auto auto auto auto;
+    div {
+        padding: 20px ;
+        font-size: 20px;
+      }
+       
+  /*contenido pagina ofertas.html*/
+  .apartadoventas{
+    background-color: $colorFondo;
+    width: 1500px;
+    .ventas{
+        display: $display;
+        padding-top: 30px;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        margin-left: 200px;
+        grid-area: img;
+        border-radius: 20px;
+        border: 2px solid $bordes;
+        width: 400px;
+        height: 400px;
+          background-color: $colorFondo;
+          .imgVenta1{
+            display: $display;
+            border-radius: 10px;
+            width: 250px;
+            height: 250px;
+            align-items: center;
+          
+          }
+          .btn-comprar {
+            display: $display;
+            flex-direction: column;
+              border: none;
+              padding: 10px;
+              font-size: 22px;
+              color: red;
+              background: $botonCompra;
+              box-shadow: 2px 2px 10px 0px rgba(0,85,212,10.0);
+            cursor: pointer;
+            position: relative;
+            top: 50px;
+            &:hover {
+                background: $botonCompra;
+                color: $colorLetra;
+                box-shadow: 2px 2px 10px 0px rgba(255, 59, 38, 10.0);
+            }
+          }
+          
+         
+          
+      }
+      p{
+        grid-area: textoventa;
+        color:  $colorLetra;
+        font-size: 30px;
+        position:relative;
+        left: 700px;
+        bottom: 200px;
+        width: 650px;
+      }
+}
+
+  }
+
+
+
+   /*estilos de la pagina tienda.html*/
+
+
+   .padre5{
+    display: grid;
+  grid-template-areas:
+  'header header header header'
+  'barra barra barra barra'
+  'img img textooferta textooferta'
+  'img img textooferta textooferta'
+  'contacto contacto contacto contacto';
+  grid-template-rows: auto 60px 2500px auto ;
+  grid-template-columns: auto auto auto auto;
+    div {
+        padding: 20px ;
+        font-size: 20px;
+      }
+        
+  /*contenido pagina tienda.html*/
+  .apartadoventas{
+    background-color: $colorFondo;
+    width: 1500px;
+    .ventas{
+        display: $display;
+        padding-top: 30px;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        margin-left: 200px;
+        grid-area: img;
+        border-radius: 20px;
+        border: 2px solid $bordes;
+        width: 400px;
+        height: 400px;
+          background-color: $colorFondo;
+          .imgVenta1{
+            display: $display;
+            border-radius: 10px;
+            width: 250px;
+            height: 250px;
+            align-items: center;
+          
+          }
+          .btn-comprar {
+            display: $display;
+            flex-direction: column;
+              border: none;
+              padding: 10px;
+              font-size: 22px;
+              color: red;
+              background: $botonCompra;
+              box-shadow: 2px 2px 10px 0px rgba(0,85,212,10.0);
+            cursor: pointer;
+            position: relative;
+            top: 50px;
+            &:hover {
+                background: $botonCompra;
+                color: $colorLetra;
+                box-shadow: 2px 2px 10px 0px rgba(255, 59, 38, 10.0);
+            }
+          }
+          
+         
+          
+      }
+      p{
+        grid-area: textoventa;
+        color: $colorLetra;
+        font-size: 30px;
+        position:relative;
+        left: 700px;
+        bottom: 200px;
+        width: 650px;
+      }
+}
+
+  }
+ 
+ 

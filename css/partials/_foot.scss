@@ -1,0 +1,49 @@
+.foot{
+    display: flex;
+    flex-direction: column;
+    grid-area: contacto;
+    background-color: black;
+    border-top: 2px solid grey;
+    height: 200px;
+    align-items: center;
+    justify-content: space-around;
+    #imagen4{
+        width: 100px;
+        margin-right: 100px;
+        margin-left: 100px;
+      
+      
+      }
+      #imagen5{
+        width: 150px;
+        margin-right: 100px;
+        margin-left: 100px;
+      }
+      #imagen6{
+        width: 130px;
+        margin-right: 100px;
+        margin-left: 100px;
+      }
+      .textocontacto{
+        display: flex;
+        align-items: center;
+        #whatsapp{
+            color: $colorLetra;
+            font-size: 25px;
+            margin-top: -20px;
+          }
+          .footerlink{
+            color: $colorLetra;
+            font-size: 25px;
+            margin-top: -50px;
+            margin-right: 130px;
+            margin-left: 120px;
+            position: relative;
+            left: 100px;
+            &:hover{
+                color: red;
+              }
+          }
+          
+      }
+  }
