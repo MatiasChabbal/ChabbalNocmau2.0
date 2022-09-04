@@ -1,6 +1,6 @@
-@import "./partials/responsive","./partials/variables","./partials/navindex","./partials/navpaginas","./partials/foot";
+@import "./partials/variables","./partials/navindex","./partials/foot","./partials/index";
 /*estilos de la pagina index.html*/
-.padre{
+.padre1{
     display: grid;
     grid-template-areas:
     'header header header header'
@@ -15,7 +15,7 @@
         padding: 20px ;
         font-size: 30px;
       }
-    
+
   /*contenido index*/
 
   .caja1{
@@ -83,8 +83,8 @@
       }
   }
 
-  
 }
+
 
 /*estilos de la pagina contacto.html*/
 
