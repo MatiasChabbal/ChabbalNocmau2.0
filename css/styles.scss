@@ -1,90 +1,89 @@
-@import "./partials/variables","./partials/navindex","./partials/foot","./partials/index";
+@import "./partials/variables","./partials/navindex","./partials/foot";
 /*estilos de la pagina index.html*/
+
 .padre1{
-    display: grid;
-    grid-template-areas:
-    'header header header header'
-    'barra barra barra barra'
-    'textoizq textoizq imagender imagender'
-    'imagenetexto imagenetexto imagender imagender'
-    'imagenetexto imagenetexto imagender imagender'
-    'contacto contacto contacto contacto';
-    grid-template-rows: auto 60px auto auto auto;
-    grid-template-columns: auto auto auto auto;
-    div {
-        padding: 20px ;
-        font-size: 30px;
-      }
+  display: grid;
+  grid-template-areas:
+  'header header header header'
+  'barra barra barra barra'
+  'textoizq textoizq imagender imagender'
+  'imagenetexto imagenetexto imagender imagender'
+  'imagenetexto imagenetexto imagender imagender'
+  'contacto contacto contacto contacto';
+  grid-template-rows: auto 60px auto auto auto;
+  grid-template-columns: auto auto auto auto;
+  div {
+      padding: 20px ;
+      font-size: 30px;
+    }
+  
+/*contenido index*/
 
-  /*contenido index*/
-
-  .caja1{
-    grid-area: textoizq;
-    background-color: $colorFondo;
-    .textocaja1{
-        font-size: 25px;
-        color:  $colorLetra;
-        margin-top: 100px;
-        margin-left: 180px;
-        text-align: left;
-        width: 700px;
-        border: 1px solid $bordes;
-        border-radius: 10px;
-        #texto1{
-            display: $display;
-            justify-content: center;
-          }
-  }
+.caja1{
+  grid-area: textoizq;
+  background-color: $colorFondo;
+  .textocaja1{
+      font-size: 25px;
+      color:  $colorLetra;
+      margin-top: 100px;
+      margin-left: 180px;
+      text-align: left;
+      width: 700px;
+      border: 1px solid $bordes;
+      border-radius: 10px;
+      #texto1{
+          display: $display;
+          justify-content: center;
+        }
 }
-  .caja2{
-    display: $display;
-    flex-direction: column;
-    grid-area: imagender;
-    background-color: $colorFondo;
+}
+.caja2{
+  display: $display;
+  flex-direction: column;
+  grid-area: imagender;
+  background-color: $colorFondo;
+  align-items: center;
+  border: 2px solid $bordes;
+  border-top: none;
+  border-bottom: none;
+  
+    .imagenes{
+      border: 2px solid white;
+      border-radius: 50%;
+      margin: 10px;
+      margin-left: -60px;
+      margin-right: -60px;
+    }
+    #imagen1{
+      width: 300px;
+    }
+    #imagen2{
+        width: 400px;
+    }
+    #imagen3{
+      width: 340px;
+    }
+}
+
+.caja3{
+  display: $display;
+  flex-direction: column;
+  grid-area: imagenetexto;
+  background-color: $colorFondo;
     align-items: center;
-    border: 2px solid $bordes;
-    border-top: none;
-    border-bottom: none;
+    .imagen789{
+
+      width: 500px;
+      border-radius: 20px;
+      box-shadow: 0 0 5px red;
     
-      .imagenes{
-        border: 2px solid white;
-        border-radius: 50%;
-        margin: 10px;
-        margin-left: -60px;
-        margin-right: -60px;
-      }
-      #imagen1{
-        width: 300px;
-      }
-      #imagen2{
-          width: 400px;
-      }
-      #imagen3{
-        width: 340px;
-      }
-  }
-
-  .caja3{
-    display: $display;
-    flex-direction: column;
-    grid-area: imagenetexto;
-    background-color: $colorFondo;
-      align-items: center;
-      .imagen789{
-
-        width: 500px;
-        border-radius: 20px;
-        box-shadow: 0 0 5px red;
-      
-      }
-      .textoImagen{
-        color: $colorLetra;
-        font-size: 25px;
-      }
-  }
-
+    }
+    .textoImagen{
+      color: $colorLetra;
+      font-size: 25px;
+    }
 }
-
+}
 
 /*estilos de la pagina contacto.html*/
 

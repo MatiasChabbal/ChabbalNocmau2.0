@@ -1,12 +1,5 @@
-
-
-
 /*titulo y logo*/
-.padre1 .header,
-.padre2 .header,
-.padre3 .header,
-.padre4 .header,
-.padre5 .header {
+.header {
   grid-area: header;
   display: flex;
   background-color: black;
@@ -14,11 +7,7 @@
   align-items: center;
   justify-content: center;
 }
-.padre1 .header .fondologo,
-.padre2 .header .fondologo,
-.padre3 .header .fondologo,
-.padre4 .header .fondologo,
-.padre5 .header .fondologo {
+.header .fondologo {
   border-radius: 50%;
   height: 110px;
   width: 110px;
@@ -58,19 +47,11 @@
     transform: rotate(360deg);
   }
 }
-.padre1 .header .fondologo #logo,
-.padre2 .header .fondologo #logo,
-.padre3 .header .fondologo #logo,
-.padre4 .header .fondologo #logo,
-.padre5 .header .fondologo #logo {
+.header .fondologo #logo {
   height: 70px;
   width: 70px;
 }
-.padre1 .header #titulo,
-.padre2 .header #titulo,
-.padre3 .header #titulo,
-.padre4 .header #titulo,
-.padre5 .header #titulo {
+.header #titulo {
   color: white;
   font-size: 50px;
   text-shadow: 0 0 30px blue;
