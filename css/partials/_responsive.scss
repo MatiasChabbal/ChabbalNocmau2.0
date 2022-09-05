@@ -15,9 +15,12 @@ height: 150px;
 
 justify-content: left;
 .fondologo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
-  height: 90px;
-   width: 90px;
+  height: 80px;
+   width: 80px;
    box-shadow: 0 0 20px blue, inset 0 0 50px blue;
    animation-name: fondologo;
    animation-duration: 4s;
@@ -29,8 +32,8 @@ justify-content: left;
     100%{box-shadow: 0 0 20px blue, inset 0 0 50px blue;transform: rotate(360deg);}
        }
    #logo{
-   height: 50px;
-    width: 50px;
+   height: 40px;
+    width: 40px;
     }
   
 }

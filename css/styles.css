@@ -206,9 +206,12 @@
 .padre3 .header .fondologo,
 .padre4 .header .fondologo,
 .padre5 .header .fondologo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
-    height: 90px;
-    width: 90px;
+    height: 80px;
+    width: 80px;
     box-shadow: 0 0 20px blue, inset 0 0 50px blue;
     -webkit-animation-name: fondologo;
             animation-name: fondologo;
@@ -250,8 +253,8 @@
 .padre3 .header .fondologo #logo,
 .padre4 .header .fondologo #logo,
 .padre5 .header .fondologo #logo {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
   }
   .padre1 .header #titulo,
 .padre2 .header #titulo,
@@ -384,13 +387,19 @@
 }
 @media screen and (max-width: 480px) {
   /*responsive index*/
-  .caja1 {
+  .padre1 {
+    display: grid;
+    grid-template-areas: "header header header header" "barra barra barra barra" "textoizq textoizq textoizq textoizq" "imagender imagender imagender imagender" "imagenetexto imagenetexto imagenetexto imagenetexto" "contacto contacto contacto contacto";
+    grid-template-rows: auto 40px auto auto;
+    grid-template-columns: 60px 220px 100px 100px;
+  }
+  .padre1 .caja1 {
     display: flex;
     justify-content: center;
     grid-area: textoizq;
     background-color: #222124;
   }
-  .textocaja1 {
+  .padre1 .caja1 .textocaja1 {
     font-size: 17px;
     color: white;
     margin-top: 20px;
@@ -402,7 +411,7 @@
     border: 1px solid red;
     border-radius: 10px;
   }
-  .caja2 {
+  .padre1 .caja2 {
     display: flex;
     grid-area: imagender;
     background-color: #222124;
@@ -411,7 +420,7 @@
     border-left: none;
     border-right: none;
   }
-  .imagenes {
+  .padre1 .caja2 .imagenes {
     border: 1px solid orange;
     border-radius: 50%;
     margin: 10px;
@@ -419,23 +428,23 @@
     position: relative;
     left: 25px;
   }
-  #imagen1 {
+  .padre1 .caja2 #imagen1 {
     width: 100px;
   }
-  #imagen2 {
+  .padre1 .caja2 #imagen2 {
     width: 200px;
   }
-  #imagen3 {
+  .padre1 .caja2 #imagen3 {
     width: 140px;
   }
-  .caja3 {
+  .padre1 .caja3 {
     display: flex;
     flex-direction: column;
     grid-area: imagenetexto;
     background-color: #222124;
     justify-content: flex-start;
   }
-  .imagen789 {
+  .padre1 .caja3 .imagen789 {
     display: flex;
     flex-direction: column;
     width: 250px;
@@ -444,14 +453,14 @@
     position: relative;
     right: 0px;
   }
-  .textoImagen {
+  .padre1 .caja3 .textoImagen {
     display: flex;
     flex-direction: column;
     color: white;
     width: 250px;
     font-size: 15px;
   }
-  .foot {
+  .padre1 .foot {
     display: flex;
     grid-area: contacto;
     background-color: black;
@@ -459,37 +468,22 @@
     height: 200px;
     align-items: left;
   }
-  #imagen4 {
+  .padre1 .foot #imagen4 {
     width: 50px;
     position: relative;
     right: 80px;
   }
-  #imagen5 {
+  .padre1 .foot #imagen5 {
     width: 100px;
     position: relative;
     right: 105px;
   }
-  #imagen6 {
+  .padre1 .foot #imagen6 {
     width: 80px;
     position: relative;
     right: 95px;
   }
-  #whatsapp {
-    color: white;
-    font-size: 15px;
-    position: relative;
-    left: 110px;
-    bottom: 50px;
-  }
-  #instagram {
-    position: relative;
-    top: 25px;
-  }
-  #facebook {
-    position: relative;
-    bottom: 25px;
-  }
-  .textocontacto {
+  .padre1 .foot .textocontacto {
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -497,22 +491,31 @@
     bottom: 100px;
     right: 140px;
   }
-  .footerlink {
+  .padre1 .foot .textocontacto #whatsapp {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 110px;
+    bottom: 50px;
+  }
+  .padre1 .foot .textocontacto #instagram {
+    position: relative;
+    top: 25px;
+  }
+  .padre1 .foot .textocontacto #facebook {
+    position: relative;
+    bottom: 25px;
+  }
+  .padre1 .foot .footerlink {
     color: white;
     font-size: 15px;
     margin-top: 0px;
   }
-  .footerlink:hover {
+  .padre1 .foot .footerlink:hover {
     color: red;
   }
-  body {
+  .padre1 body {
     margin: 0px;
-  }
-  .padre {
-    display: grid;
-    grid-template-areas: "header header header header" "barra barra barra barra" "textoizq textoizq textoizq textoizq" "imagender imagender imagender imagender" "imagenetexto imagenetexto imagenetexto imagenetexto" "contacto contacto contacto contacto";
-    grid-template-rows: auto 40px auto auto;
-    grid-template-columns: 60px 220px 100px 100px;
   }
   /*responsive contacto*/
   .navegacion {
