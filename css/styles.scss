@@ -1,4 +1,4 @@
-@import "./partials/variables","./partials/navindex","./partials/foot";
+@import  "./partials/variables","./partials/navindex","./partials/foot","./partials/responsive","./partials/responsive2";
 /*estilos de la pagina index.html*/
 
 .padre1{
@@ -22,6 +22,7 @@
 .caja1{
   grid-area: textoizq;
   background-color: $colorFondo;
+  
   .textocaja1{
       font-size: 25px;
       color:  $colorLetra;
@@ -363,6 +364,9 @@
  
  
 
+
+
+  
 
 
 

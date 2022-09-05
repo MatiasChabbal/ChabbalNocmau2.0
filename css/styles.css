@@ -181,6 +181,238 @@
   color: red;
 }
 
+@media screen and (max-width: 480px) {
+  /*titulo y logo*/
+  .padre1,
+.padre2,
+.padre3,
+.padre4,
+.padre5 {
+    /*navegador*/
+  }
+  .padre1 .header,
+.padre2 .header,
+.padre3 .header,
+.padre4 .header,
+.padre5 .header {
+    grid-area: header;
+    display: flex;
+    background-color: black;
+    height: 150px;
+    justify-content: left;
+  }
+  .padre1 .header .fondologo,
+.padre2 .header .fondologo,
+.padre3 .header .fondologo,
+.padre4 .header .fondologo,
+.padre5 .header .fondologo {
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    box-shadow: 0 0 20px blue, inset 0 0 50px blue;
+    -webkit-animation-name: fondologo;
+            animation-name: fondologo;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes fondologo {
+    0% {
+      box-shadow: 0 0 20px blue, inset 0 0 50px blue;
+      transform: rotate(0deg);
+    }
+    50% {
+      box-shadow: 0 0 40px red, inset 0 0 50px red;
+    }
+    100% {
+      box-shadow: 0 0 20px blue, inset 0 0 50px blue;
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes fondologo {
+    0% {
+      box-shadow: 0 0 20px blue, inset 0 0 50px blue;
+      transform: rotate(0deg);
+    }
+    50% {
+      box-shadow: 0 0 40px red, inset 0 0 50px red;
+    }
+    100% {
+      box-shadow: 0 0 20px blue, inset 0 0 50px blue;
+      transform: rotate(360deg);
+    }
+  }
+  .padre1 .header .fondologo #logo,
+.padre2 .header .fondologo #logo,
+.padre3 .header .fondologo #logo,
+.padre4 .header .fondologo #logo,
+.padre5 .header .fondologo #logo {
+    height: 50px;
+    width: 50px;
+  }
+  .padre1 .header #titulo,
+.padre2 .header #titulo,
+.padre3 .header #titulo,
+.padre4 .header #titulo,
+.padre5 .header #titulo {
+    color: white;
+    font-size: 40px;
+    text-shadow: 0 0 30px blue;
+    -webkit-animation-name: title;
+            animation-name: title;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes title {
+    0% {
+      text-shadow: 0 0 30px blue;
+    }
+    50% {
+      text-shadow: 0 0 40px red;
+    }
+    100% {
+      text-shadow: 0 0 30px blue;
+    }
+  }
+  @keyframes title {
+    0% {
+      text-shadow: 0 0 30px blue;
+    }
+    50% {
+      text-shadow: 0 0 40px red;
+    }
+    100% {
+      text-shadow: 0 0 30px blue;
+    }
+  }
+  .padre1 .navegacion,
+.padre2 .navegacion,
+.padre3 .navegacion,
+.padre4 .navegacion,
+.padre5 .navegacion {
+    display: grid;
+    justify-content: center;
+    padding-top: 0px;
+    grid-area: barra;
+    border-top: 3px solid red;
+    border-bottom: 3px solid red;
+    background-color: black;
+  }
+  .padre1 .navegacion .enlacecontacto,
+.padre1 .navegacion #tienda,
+.padre1 .navegacion #ofertas,
+.padre2 .navegacion .enlacecontacto,
+.padre2 .navegacion #tienda,
+.padre2 .navegacion #ofertas,
+.padre3 .navegacion .enlacecontacto,
+.padre3 .navegacion #tienda,
+.padre3 .navegacion #ofertas,
+.padre4 .navegacion .enlacecontacto,
+.padre4 .navegacion #tienda,
+.padre4 .navegacion #ofertas,
+.padre5 .navegacion .enlacecontacto,
+.padre5 .navegacion #tienda,
+.padre5 .navegacion #ofertas {
+    text-decoration: none;
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+    bottom: 65px;
+    font-size: 30px;
+  }
+  .padre1 .navegacion .enlacecontacto:hover,
+.padre1 .navegacion #tienda:hover,
+.padre1 .navegacion #ofertas:hover,
+.padre2 .navegacion .enlacecontacto:hover,
+.padre2 .navegacion #tienda:hover,
+.padre2 .navegacion #ofertas:hover,
+.padre3 .navegacion .enlacecontacto:hover,
+.padre3 .navegacion #tienda:hover,
+.padre3 .navegacion #ofertas:hover,
+.padre4 .navegacion .enlacecontacto:hover,
+.padre4 .navegacion #tienda:hover,
+.padre4 .navegacion #ofertas:hover,
+.padre5 .navegacion .enlacecontacto:hover,
+.padre5 .navegacion #tienda:hover,
+.padre5 .navegacion #ofertas:hover {
+    text-decoration: none;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #1C1B20;
+    border-bottom: 3px solid white;
+    box-shadow: inset 5px 5px 20px 10px blue;
+    font-size: 27px;
+  }
+  .padre1 .navegacion .etiquetaMenu,
+.padre2 .navegacion .etiquetaMenu,
+.padre3 .navegacion .etiquetaMenu,
+.padre4 .navegacion .etiquetaMenu,
+.padre5 .navegacion .etiquetaMenu {
+    text-decoration: none;
+    color: white;
+  }
+  .padre1 .navegacion .dropdown-menu,
+.padre2 .navegacion .dropdown-menu,
+.padre3 .navegacion .dropdown-menu,
+.padre4 .navegacion .dropdown-menu,
+.padre5 .navegacion .dropdown-menu {
+    background-color: #1C1B20;
+    border: 1px solid red;
+  }
+  .padre1 .navegacion #tienda,
+.padre1 .navegacion #ofertas,
+.padre2 .navegacion #tienda,
+.padre2 .navegacion #ofertas,
+.padre3 .navegacion #tienda,
+.padre3 .navegacion #ofertas,
+.padre4 .navegacion #tienda,
+.padre4 .navegacion #ofertas,
+.padre5 .navegacion #tienda,
+.padre5 .navegacion #ofertas {
+    position: relative;
+    top: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .padre1 {
+    display: grid;
+    grid-template-areas: "header header header header" "barra barra barra barra" "textoizq textoizq imagender imagender" "imagenetexto imagenetexto imagender imagender" "imagenetexto imagenetexto imagender imagender" "contacto contacto contacto contacto";
+    grid-template-rows: auto 60px auto auto auto;
+    grid-template-columns: auto auto auto auto;
+    /*contenido index*/
+  }
+  .padre1 div {
+    padding: 20px;
+    font-size: 30px;
+  }
+  .padre1 .caja1 {
+    grid-area: textoizq;
+    background-color: #222124;
+  }
+  .padre1 .caja1 .textocaja1 {
+    font-size: 15px;
+    color: white;
+    margin-top: 100px;
+    margin-left: 180px;
+    text-align: left;
+    width: 700px;
+    border: 1px solid red;
+    border-radius: 10px;
+  }
+  .padre1 .caja1 .textocaja1 #texto1 {
+    display: flex;
+    justify-content: center;
+  }
+}
 /*estilos de la pagina index.html*/
 .padre1 {
   display: grid;

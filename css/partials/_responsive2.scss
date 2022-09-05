@@ -1,0 +1,43 @@
+
+
+@media screen and (max-width: 480px){
+    @import  "./partials/variables";
+    .padre1{
+        display: grid;
+        grid-template-areas:
+        'header header header header'
+        'barra barra barra barra'
+        'textoizq textoizq imagender imagender'
+        'imagenetexto imagenetexto imagender imagender'
+        'imagenetexto imagenetexto imagender imagender'
+        'contacto contacto contacto contacto';
+        grid-template-rows: auto 60px auto auto auto;
+        grid-template-columns: auto auto auto auto;
+        div {
+            padding: 20px ;
+            font-size: 30px;
+          }
+        
+      /*contenido index*/
+      
+      .caja1{
+        grid-area: textoizq;
+        background-color: $colorFondo;
+        
+        .textocaja1{
+            font-size: 15px;
+            color:  $colorLetra;
+            margin-top: 100px;
+            margin-left: 180px;
+            text-align: left;
+            width: 700px;
+            border: 1px solid $bordes;
+            border-radius: 10px;
+            #texto1{
+                display: $display;
+                justify-content: center;
+              }
+      }
+      }
+    }
+  }
