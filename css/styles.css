@@ -387,10 +387,17 @@
 }
 @media screen and (max-width: 480px) {
   /*responsive index*/
+  .container-fluid {
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    right: 100px;
+  }
   .padre1 {
     display: grid;
     grid-template-areas: "header header header header" "barra barra barra barra" "textoizq textoizq textoizq textoizq" "imagender imagender imagender imagender" "imagenetexto imagenetexto imagenetexto imagenetexto" "contacto contacto contacto contacto";
-    grid-template-rows: auto 40px auto auto;
+    grid-template-rows: auto 40px auto auto auto;
     grid-template-columns: 60px 220px 100px 100px;
   }
   .padre1 .caja1 {
@@ -410,15 +417,21 @@
     width: 400px;
     border: 1px solid red;
     border-radius: 10px;
+    position: relative;
+    top: 100px;
+    background-color: #222124;
   }
   .padre1 .caja2 {
     display: flex;
+    flex-direction: column;
     grid-area: imagender;
     background-color: #222124;
     align-items: center;
     border: 1px solid red;
     border-left: none;
     border-right: none;
+    position: relative;
+    top: 200px;
   }
   .padre1 .caja2 .imagenes {
     border: 1px solid orange;
@@ -443,6 +456,8 @@
     grid-area: imagenetexto;
     background-color: #222124;
     justify-content: flex-start;
+    align-items: center;
+    height: 1000px;
   }
   .padre1 .caja3 .imagen789 {
     display: flex;
@@ -451,6 +466,7 @@
     border-radius: 20px;
     box-shadow: 0 0 5px red;
     position: relative;
+    top: 300px;
     right: 0px;
   }
   .padre1 .caja3 .textoImagen {
@@ -459,13 +475,15 @@
     color: white;
     width: 250px;
     font-size: 15px;
+    position: relative;
+    top: 300px;
   }
   .padre1 .foot {
     display: flex;
     grid-area: contacto;
     background-color: black;
     border-top: 2px solid grey;
-    height: 200px;
+    height: 300px;
     align-items: left;
   }
   .padre1 .foot #imagen4 {
