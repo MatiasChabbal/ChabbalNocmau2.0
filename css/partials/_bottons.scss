@@ -1,0 +1,14 @@
+
+@media screen and (max-width: 480px){
+.btn-comprar {
+    @extend %botonBase;
+      color: red;
+      background: black;
+
+  }
+}
+@media screen and (min-width: 601px ) and (max-width: 1024px){
+    .btn-comprar {
+        @include botones600px($border:none, $color:red,$position:relative);
+}
+}

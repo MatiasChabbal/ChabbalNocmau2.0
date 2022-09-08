@@ -1,3 +1,65 @@
+@media screen and (min-width: 100px) and (max-width: 480px){
+.foot{
+  display: flex;
+  grid-area: contacto;
+  background-color: black;
+  border-top: 2px solid grey;
+  height: 300px;
+  align-items: left;
+  #imagen4{
+    width: 50px;
+    position: relative;
+    top: 30px;
+    right: 40px;
+  }
+  #imagen5{
+    width: 100px;
+    position: relative;
+    right: 65px;
+    top: 50px;
+  }
+  #imagen6{
+    width: 80px;
+    position: relative;
+    right: 55px;
+    top: 60px;
+  }
+  .textocontacto{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    position: relative;
+    bottom: 90px;
+    right: 140px;
+    #whatsapp{
+      color: white;
+      font-size: 20px;
+      position: relative;
+      left: 110px;
+      bottom: 80px;
+  
+    }
+    #instagram{
+      position: relative;
+      top: 65px;
+    }
+    #facebook{
+      position: relative;
+      bottom: 25px;
+    }
+  }
+  
+.footerlink{
+    color: white;
+    font-size: 15px;
+    margin-top: 0px;
+    &:hover{
+      color: red;
+    }
+  }
+}
+}
+@media screen and (min-width: 1025px) and (max-width: 2000px) {
 .foot{
     display: flex;
     flex-direction: column;
@@ -47,3 +109,4 @@
           
       }
   }
+}

@@ -134,53 +134,54 @@
   top: 10px;
 }
 
-.foot {
-  display: flex;
-  flex-direction: column;
-  grid-area: contacto;
-  background-color: black;
-  border-top: 2px solid grey;
-  height: 200px;
-  align-items: center;
-  justify-content: space-around;
+@media screen and (min-width: 1025px) and (max-width: 2000px) {
+  .foot {
+    display: flex;
+    flex-direction: column;
+    grid-area: contacto;
+    background-color: black;
+    border-top: 2px solid grey;
+    height: 200px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .foot #imagen4 {
+    width: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+  .foot #imagen5 {
+    width: 150px;
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+  .foot #imagen6 {
+    width: 130px;
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+  .foot .textocontacto {
+    display: flex;
+    align-items: center;
+  }
+  .foot .textocontacto #whatsapp {
+    color: white;
+    font-size: 25px;
+    margin-top: -20px;
+  }
+  .foot .textocontacto .footerlink {
+    color: white;
+    font-size: 25px;
+    margin-top: -50px;
+    margin-right: 130px;
+    margin-left: 120px;
+    position: relative;
+    left: 100px;
+  }
+  .foot .textocontacto .footerlink:hover {
+    color: red;
+  }
 }
-.foot #imagen4 {
-  width: 100px;
-  margin-right: 100px;
-  margin-left: 100px;
-}
-.foot #imagen5 {
-  width: 150px;
-  margin-right: 100px;
-  margin-left: 100px;
-}
-.foot #imagen6 {
-  width: 130px;
-  margin-right: 100px;
-  margin-left: 100px;
-}
-.foot .textocontacto {
-  display: flex;
-  align-items: center;
-}
-.foot .textocontacto #whatsapp {
-  color: white;
-  font-size: 25px;
-  margin-top: -20px;
-}
-.foot .textocontacto .footerlink {
-  color: white;
-  font-size: 25px;
-  margin-top: -50px;
-  margin-right: 130px;
-  margin-left: 120px;
-  position: relative;
-  left: 100px;
-}
-.foot .textocontacto .footerlink:hover {
-  color: red;
-}
-
 @media screen and (max-width: 480px) {
   /*titulo y logo*/
   .padre1,
@@ -385,6 +386,210 @@
     top: 10px;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 600px) {
+  /*titulo y logo*/
+  .padre1,
+.padre2,
+.padre3,
+.padre4,
+.padre5 {
+    /*navegador*/
+  }
+  .padre1 .header,
+.padre2 .header,
+.padre3 .header,
+.padre4 .header,
+.padre5 .header {
+    grid-area: header;
+    display: flex;
+    background-color: black;
+    height: 150px;
+    justify-content: center;
+  }
+  .padre1 .header .fondologo,
+.padre2 .header .fondologo,
+.padre3 .header .fondologo,
+.padre4 .header .fondologo,
+.padre5 .header .fondologo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    box-shadow: 0 0 20px blue, inset 0 0 50px blue;
+    -webkit-animation-name: fondologo;
+            animation-name: fondologo;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes fondologo {
+    0% {
+      box-shadow: 0 0 20px blue, inset 0 0 50px blue;
+      transform: rotate(0deg);
+    }
+    50% {
+      box-shadow: 0 0 40px red, inset 0 0 50px red;
+    }
+    100% {
+      box-shadow: 0 0 20px blue, inset 0 0 50px blue;
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes fondologo {
+    0% {
+      box-shadow: 0 0 20px blue, inset 0 0 50px blue;
+      transform: rotate(0deg);
+    }
+    50% {
+      box-shadow: 0 0 40px red, inset 0 0 50px red;
+    }
+    100% {
+      box-shadow: 0 0 20px blue, inset 0 0 50px blue;
+      transform: rotate(360deg);
+    }
+  }
+  .padre1 .header .fondologo #logo,
+.padre2 .header .fondologo #logo,
+.padre3 .header .fondologo #logo,
+.padre4 .header .fondologo #logo,
+.padre5 .header .fondologo #logo {
+    height: 60px;
+    width: 60px;
+  }
+  .padre1 .header #titulo,
+.padre2 .header #titulo,
+.padre3 .header #titulo,
+.padre4 .header #titulo,
+.padre5 .header #titulo {
+    color: white;
+    font-size: 50px;
+    text-shadow: 0 0 30px blue;
+    -webkit-animation-name: title;
+            animation-name: title;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes title {
+    0% {
+      text-shadow: 0 0 30px blue;
+    }
+    50% {
+      text-shadow: 0 0 40px red;
+    }
+    100% {
+      text-shadow: 0 0 30px blue;
+    }
+  }
+  @keyframes title {
+    0% {
+      text-shadow: 0 0 30px blue;
+    }
+    50% {
+      text-shadow: 0 0 40px red;
+    }
+    100% {
+      text-shadow: 0 0 30px blue;
+    }
+  }
+  .padre1 .navegacion,
+.padre2 .navegacion,
+.padre3 .navegacion,
+.padre4 .navegacion,
+.padre5 .navegacion {
+    display: grid;
+    justify-content: center;
+    padding-top: 0px;
+    grid-area: barra;
+    border-top: 3px solid red;
+    border-bottom: 3px solid red;
+    background-color: black;
+  }
+  .padre1 .navegacion .enlacecontacto,
+.padre1 .navegacion #tienda,
+.padre1 .navegacion #ofertas,
+.padre2 .navegacion .enlacecontacto,
+.padre2 .navegacion #tienda,
+.padre2 .navegacion #ofertas,
+.padre3 .navegacion .enlacecontacto,
+.padre3 .navegacion #tienda,
+.padre3 .navegacion #ofertas,
+.padre4 .navegacion .enlacecontacto,
+.padre4 .navegacion #tienda,
+.padre4 .navegacion #ofertas,
+.padre5 .navegacion .enlacecontacto,
+.padre5 .navegacion #tienda,
+.padre5 .navegacion #ofertas {
+    text-decoration: none;
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+    bottom: 65px;
+    font-size: 30px;
+  }
+  .padre1 .navegacion .enlacecontacto:hover,
+.padre1 .navegacion #tienda:hover,
+.padre1 .navegacion #ofertas:hover,
+.padre2 .navegacion .enlacecontacto:hover,
+.padre2 .navegacion #tienda:hover,
+.padre2 .navegacion #ofertas:hover,
+.padre3 .navegacion .enlacecontacto:hover,
+.padre3 .navegacion #tienda:hover,
+.padre3 .navegacion #ofertas:hover,
+.padre4 .navegacion .enlacecontacto:hover,
+.padre4 .navegacion #tienda:hover,
+.padre4 .navegacion #ofertas:hover,
+.padre5 .navegacion .enlacecontacto:hover,
+.padre5 .navegacion #tienda:hover,
+.padre5 .navegacion #ofertas:hover {
+    text-decoration: none;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #1C1B20;
+    border-bottom: 3px solid white;
+    box-shadow: inset 5px 5px 20px 10px blue;
+    font-size: 27px;
+  }
+  .padre1 .navegacion .etiquetaMenu,
+.padre2 .navegacion .etiquetaMenu,
+.padre3 .navegacion .etiquetaMenu,
+.padre4 .navegacion .etiquetaMenu,
+.padre5 .navegacion .etiquetaMenu {
+    text-decoration: none;
+    color: white;
+  }
+  .padre1 .navegacion .dropdown-menu,
+.padre2 .navegacion .dropdown-menu,
+.padre3 .navegacion .dropdown-menu,
+.padre4 .navegacion .dropdown-menu,
+.padre5 .navegacion .dropdown-menu {
+    background-color: #1C1B20;
+    border: 1px solid red;
+  }
+  .padre1 .navegacion #tienda,
+.padre1 .navegacion #ofertas,
+.padre2 .navegacion #tienda,
+.padre2 .navegacion #ofertas,
+.padre3 .navegacion #tienda,
+.padre3 .navegacion #ofertas,
+.padre4 .navegacion #tienda,
+.padre4 .navegacion #ofertas,
+.padre5 .navegacion #tienda,
+.padre5 .navegacion #ofertas {
+    position: relative;
+    top: 10px;
+  }
+}
 @media screen and (max-width: 480px) {
   /*responsive index*/
   .container-fluid {
@@ -398,30 +603,32 @@
     display: grid;
     grid-template-areas: "header header header header" "barra barra barra barra" "textoizq textoizq textoizq textoizq" "imagender imagender imagender imagender" "imagenetexto imagenetexto imagenetexto imagenetexto" "contacto contacto contacto contacto";
     grid-template-rows: auto 40px auto auto auto;
-    grid-template-columns: 60px 220px 100px 100px;
+    grid-template-columns: auto auto auto auto;
   }
-  .padre1 .caja1 {
+  .caja1 {
     display: flex;
     justify-content: center;
     grid-area: textoizq;
     background-color: #222124;
+    height: 600px;
   }
-  .padre1 .caja1 .textocaja1 {
+  .caja1 .cajatexto {
+    background-color: #222124;
+  }
+  .caja1 .cajatexto .textocaja1 {
     font-size: 17px;
     color: white;
     margin-top: 20px;
     margin-left: 0px;
-    position: relative;
-    left: 10px;
     text-align: left;
-    width: 400px;
+    width: 370px;
     border: 1px solid red;
     border-radius: 10px;
     position: relative;
-    top: 100px;
+    top: 200px;
     background-color: #222124;
   }
-  .padre1 .caja2 {
+  .caja2 {
     display: flex;
     flex-direction: column;
     grid-area: imagender;
@@ -430,10 +637,8 @@
     border: 1px solid red;
     border-left: none;
     border-right: none;
-    position: relative;
-    top: 200px;
   }
-  .padre1 .caja2 .imagenes {
+  .caja2 .imagenes {
     border: 1px solid orange;
     border-radius: 50%;
     margin: 10px;
@@ -441,146 +646,98 @@
     position: relative;
     left: 25px;
   }
-  .padre1 .caja2 #imagen1 {
+  .caja2 #imagen1 {
     width: 100px;
   }
-  .padre1 .caja2 #imagen2 {
+  .caja2 #imagen2 {
     width: 200px;
   }
-  .padre1 .caja2 #imagen3 {
+  .caja2 #imagen3 {
     width: 140px;
   }
-  .padre1 .caja3 {
+  .caja3 {
     display: flex;
     flex-direction: column;
     grid-area: imagenetexto;
     background-color: #222124;
     justify-content: flex-start;
     align-items: center;
-    height: 1000px;
+    height: 800px;
   }
-  .padre1 .caja3 .imagen789 {
+  .caja3 .imagen789 {
     display: flex;
     flex-direction: column;
     width: 250px;
     border-radius: 20px;
     box-shadow: 0 0 5px red;
     position: relative;
-    top: 300px;
+    top: 100px;
     right: 0px;
   }
-  .padre1 .caja3 .textoImagen {
+  .caja3 .textoImagen {
     display: flex;
     flex-direction: column;
     color: white;
     width: 250px;
     font-size: 15px;
     position: relative;
-    top: 300px;
+    top: 100px;
   }
-  .padre1 .foot {
-    display: flex;
-    grid-area: contacto;
-    background-color: black;
-    border-top: 2px solid grey;
-    height: 300px;
-    align-items: left;
-  }
-  .padre1 .foot #imagen4 {
-    width: 50px;
-    position: relative;
-    right: 80px;
-  }
-  .padre1 .foot #imagen5 {
-    width: 100px;
-    position: relative;
-    right: 105px;
-  }
-  .padre1 .foot #imagen6 {
-    width: 80px;
-    position: relative;
-    right: 95px;
-  }
-  .padre1 .foot .textocontacto {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    position: relative;
-    bottom: 100px;
-    right: 140px;
-  }
-  .padre1 .foot .textocontacto #whatsapp {
-    color: white;
-    font-size: 20px;
-    position: relative;
-    left: 110px;
-    bottom: 50px;
-  }
-  .padre1 .foot .textocontacto #instagram {
-    position: relative;
-    top: 25px;
-  }
-  .padre1 .foot .textocontacto #facebook {
-    position: relative;
-    bottom: 25px;
-  }
-  .padre1 .foot .footerlink {
-    color: white;
-    font-size: 15px;
-    margin-top: 0px;
-  }
-  .padre1 .foot .footerlink:hover {
-    color: red;
-  }
-  .padre1 body {
+  .caja3 body {
     margin: 0px;
   }
   /*responsive contacto*/
-  .navegacion {
-    border-bottom: none;
-    height: 100px;
-  }
   .formulario {
     display: flex;
     justify-content: center;
     grid-area: formulario;
     background-color: #222124;
+    position: relative;
+    height: 800px;
   }
-  #contacto_nav {
+  .formulario .cajacontacto {
+    display: flex;
+    position: relative;
+    top: 100px;
+  }
+  .formulario #contacto_nav {
     display: flex;
     flex-direction: column;
     padding: 10px;
     border-radius: 10px;
-    width: 200px;
+    width: 300px;
     height: 450px;
     border: 2px solid red;
     margin-top: 50px;
   }
-  .formulario2 {
+  .formulario .formulario2 {
+    display: flex;
+    flex-direction: column;
     color: white;
     font-size: 12px;
   }
-  .formulario1 {
-    width: 50px;
+  .formulario .formulario1 {
+    width: 90px;
     font-size: 10px;
   }
-  #label_comentario {
+  .formulario #label_comentario {
     color: white;
     font-size: 12px;
     margin-top: 10px;
-    position: relative;
-    right: 30px;
+    margin-left: 20px;
   }
-  #comentario {
+  .formulario #comentario {
     border-radius: 10px;
     width: 150px;
     height: 150px;
     position: relative;
-    left: 25px;
+    top: 15px;
+    left: 50px;
   }
-  #enviar {
+  .formulario #enviar {
     position: relative;
-    left: 75px;
+    top: 30px;
+    left: 100px;
     width: 50px;
     font-size: 10px;
   }
@@ -612,18 +769,20 @@
   /*responsive nosotros*/
   .mapa {
     display: flex;
+    justify-content: center;
     grid-area: mapa;
     background-color: #222124;
   }
   .textoNosotros {
+    display: flex;
     grid-area: textoNosotros;
     background-color: #222124;
+    justify-content: center;
   }
   .mapalocal {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    margin-left: 30px;
     color: white;
     font-size: 15px;
   }
@@ -631,6 +790,12 @@
     width: 200px;
     height: 150px;
     border-radius: 10px;
+    position: relative;
+    top: 150px;
+  }
+  #titulo-nosotros {
+    position: relative;
+    top: 150px;
   }
   .ubicacion {
     display: flex;
@@ -645,8 +810,8 @@
   .padre3 {
     display: grid;
     grid-template-areas: "header header header header" "barra barra barra barra" "mapa mapa mapa mapa" "textoNosotros textoNosotros textoNosotros textoNosotros" "contacto contacto contacto contacto";
-    grid-template-rows: auto 40px 250px auto;
-    grid-template-columns: 60px 70px 100px 100px;
+    grid-template-rows: auto 40px 400px auto;
+    grid-template-columns: 60px 70px 100px auto;
   }
   .padre3 > div {
     padding: 20px;
@@ -657,13 +822,17 @@
     color: white;
     font-size: 10px;
     position: relative;
+    top: 200px;
     left: 50px;
     bottom: 0px;
     width: 200px;
   }
   .apartadoventas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #222124;
-    width: 300px;
+    width: 480px;
     height: 1400px;
   }
   .ventas {
@@ -679,6 +848,8 @@
     width: 200px;
     height: 200px;
     background-color: #222124;
+    position: relative;
+    top: 200px;
   }
   .btn-comprar {
     display: flex;
@@ -710,8 +881,8 @@
     display: grid;
     grid-template-areas: "header header header header" "barra barra barra barra" "img img img img" "textoventa textoventa textoventa textoventa" "contacto contacto contacto contacto";
     background-color: #222124;
-    grid-template-rows: auto 40px 1400px auto;
-    grid-template-columns: 60px 60px 100px 100px;
+    grid-template-rows: auto 40px 1500px auto;
+    grid-template-columns: 60px 60px auto 100px;
   }
   .padre4 > div {
     padding: 20px;
@@ -722,8 +893,8 @@
     color: white;
     font-size: 13px;
     position: relative;
+    top: 200px;
     left: 20px;
-    bottom: 0px;
     text-shadow: 0 0 10px yellow;
     width: 250px;
   }
@@ -767,80 +938,109 @@
     display: grid;
     grid-template-areas: "header header header header" "barra barra barra barra" "img img img img" "textooferta textooferta textooferta textooferta" "contacto contacto contacto contacto";
     grid-template-rows: auto 40px 1400px auto;
-    grid-template-columns: 60px 50px 100px 100px;
+    grid-template-columns: auto auto auto auto;
+  }
+  .foot {
+    display: flex;
+    grid-area: contacto;
+    background-color: black;
+    border-top: 2px solid grey;
+    height: 300px;
+    align-items: left;
+  }
+  .foot #imagen4 {
+    width: 50px;
+    position: relative;
+    top: 30px;
+    right: 40px;
+  }
+  .foot #imagen5 {
+    width: 100px;
+    position: relative;
+    right: 65px;
+    top: 50px;
+  }
+  .foot #imagen6 {
+    width: 80px;
+    position: relative;
+    right: 55px;
+    top: 60px;
+  }
+  .foot .textocontacto {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    position: relative;
+    bottom: 90px;
+    right: 140px;
+  }
+  .foot .textocontacto #whatsapp {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 110px;
+    bottom: 80px;
+  }
+  .foot .textocontacto #instagram {
+    position: relative;
+    top: 65px;
+  }
+  .foot .textocontacto #facebook {
+    position: relative;
+    bottom: 25px;
+  }
+  .foot .footerlink {
+    color: white;
+    font-size: 15px;
+    margin-top: 0px;
+  }
+  .foot .footerlink:hover {
+    color: red;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 600px) {
-  .header {
-    grid-area: header;
-    display: flex;
-    background-color: black;
-    height: 50px;
-    justify-content: center;
-  }
-  #logo {
-    height: 40px;
-    width: 40px;
-  }
-  .fondologo {
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    box-shadow: 0 0 50px blue, inset 0 0 50px blue;
-  }
-  #titulo {
-    color: white;
-    font-size: 30px;
-    text-shadow: 0 0 30px blue;
-    padding-left: 20px;
-  }
-  .navegacion {
-    display: flex;
-    padding-top: 0px;
-    grid-area: barra;
-    border-top: 1px solid red;
-    background-color: black;
-    justify-content: center;
-  }
-  .enlace {
-    display: inline-flex;
-    padding-left: 10px;
-    padding-right: 10px;
-    position: relative;
-    left: 0px;
-    bottom: 50px;
-    font-size: 15px;
-  }
-  .enlace:hover {
-    text-decoration: none;
-    color: white;
-    padding-left: 5px;
-    padding-right: 5px;
-    background-color: #1C1B20;
-    border-bottom: 3px solid white;
-    box-shadow: inset 5px 5px 20px 10px blue;
-    font-size: 10px;
-  }
   /*index*/
-  .caja1 {
+  .container-fluid {
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    right: 100px;
+  }
+  .padre1 {
+    display: grid;
+    grid-template-areas: "header header header header" "barra barra barra barra" "textoizq textoizq textoizq textoizq" "imagender imagender imagender imagender" "imagenetexto imagenetexto imagenetexto imagenetexto" "contacto contacto contacto contacto";
+    grid-template-rows: auto 40px auto auto auto;
+    grid-template-columns: 60px 170px auto auto;
+  }
+  .padre1 .caja1 {
+    display: flex;
+    justify-content: center;
     grid-area: textoizq;
     background-color: #222124;
+    height: 600px;
   }
-  .textocaja1 {
-    font-size: 20px;
+  .padre1 .caja1 .cajatexto {
+    background-color: #222124;
+  }
+  .padre1 .caja1 .cajatexto .textocaja1 {
+    font-size: 17px;
     color: white;
     margin-top: 20px;
     margin-left: 0px;
     position: relative;
-    left: 30px;
+    left: 10px;
     text-align: left;
     width: 500px;
     border: 1px solid red;
     border-radius: 10px;
+    position: relative;
+    top: 200px;
+    background-color: #222124;
   }
-  .caja2 {
+  .padre1 .caja2 {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     grid-area: imagender;
     background-color: #222124;
     align-items: center;
@@ -848,172 +1048,117 @@
     border-left: none;
     border-right: none;
   }
-  .imagenes {
+  .padre1 .caja2 .imagenes {
+    display: flex;
+    justify-content: center;
     border: 1px solid orange;
     border-radius: 50%;
     margin: 10px;
-    margin-right: 30px;
-    position: relative;
-    left: 25px;
+    margin-right: 20px;
   }
-  #imagen1 {
+  .padre1 .caja2 #imagen1 {
     width: 100px;
   }
-  #imagen2 {
-    width: 200px;
+  .padre1 .caja2 #imagen2 {
+    width: 150px;
   }
-  #imagen3 {
+  .padre1 .caja2 #imagen3 {
     width: 140px;
   }
-  .caja3 {
+  .padre1 .caja3 {
     display: flex;
     flex-direction: column;
     grid-area: imagenetexto;
     background-color: #222124;
     justify-content: flex-start;
+    align-items: center;
+    height: 800px;
   }
-  .imagen789 {
+  .padre1 .caja3 .imagen789 {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 250px;
     border-radius: 20px;
     box-shadow: 0 0 5px red;
     position: relative;
+    top: 100px;
     right: 0px;
   }
-  .textoImagen {
+  .padre1 .caja3 .textoImagen {
     display: flex;
     flex-direction: column;
     color: white;
-    width: 280px;
-    font-size: 20px;
-  }
-  .foot {
-    display: flex;
-    grid-area: contacto;
-    background-color: black;
-    border-top: 2px solid grey;
-    height: 200px;
-  }
-  #imagen4 {
-    width: 50px;
+    width: 250px;
+    font-size: 15px;
     position: relative;
-    bottom: 15px;
-    right: -10px;
+    top: 100px;
   }
-  #imagen5 {
-    width: 100px;
-    position: relative;
-    top: 65px;
-    right: 275px;
-  }
-  #imagen6 {
-    width: 80px;
-    position: relative;
-    top: 70px;
-    right: 5px;
-  }
-  #whatsapp {
-    color: white;
-    font-size: 20px;
-    position: relative;
-    left: 110px;
-    bottom: 0px;
-  }
-  #instagram {
-    position: relative;
-    left: 100px;
-    top: 70px;
-  }
-  #facebook {
-    position: relative;
-    bottom: -25px;
-  }
-  .textocontacto {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    position: relative;
-    bottom: 100px;
-    right: 140px;
-  }
-  .footerlink {
-    color: white;
-    font-size: 20px;
-    margin-top: 0px;
-  }
-  .footerlink:hover {
-    color: red;
-  }
-  body {
+  .padre1 body {
     margin: 0px;
   }
-  .padre {
-    display: grid;
-    grid-template-areas: "header header header header" "barra barra barra barra" "textoizq textoizq textoizq textoizq" "imagender imagender imagender imagender" "imagenetexto imagenetexto imagenetexto imagenetexto" "contacto contacto contacto contacto";
-    grid-template-rows: auto 60px auto auto;
-    grid-template-columns: 60px 340px 100px 100px;
-  }
-  /*responsive tablet contacto*/
-  .navegacion {
-    border-bottom: none;
-  }
+  /*responsive contacto*/
   .formulario {
     display: flex;
     justify-content: center;
     grid-area: formulario;
     background-color: #222124;
+    position: relative;
+    height: 800px;
   }
-  #contacto_nav {
+  .formulario .cajacontacto {
+    display: flex;
+    position: relative;
+    top: 100px;
+  }
+  .formulario #contacto_nav {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
-    width: 400px;
-    height: 600px;
+    width: 300px;
+    height: 450px;
     border: 2px solid red;
     margin-top: 50px;
   }
-  .formulario2 {
+  .formulario .formulario2 {
+    display: flex;
+    flex-direction: column;
     color: white;
-    font-size: 16px;
-    padding-top: 20px;
+    font-size: 12px;
   }
-  .formulario1 {
-    width: 100px;
-    font-size: 15px;
+  .formulario .formulario1 {
+    width: 90px;
+    font-size: 10px;
   }
-  #label_comentario {
+  .formulario #label_comentario {
     color: white;
-    font-size: 16px;
+    font-size: 12px;
     margin-top: 10px;
-    position: relative;
-    top: 80px;
-    right: 40px;
+    margin-left: 20px;
   }
-  #comentario {
+  .formulario #comentario {
     border-radius: 10px;
-    width: 350px;
-    height: 220px;
+    width: 150px;
+    height: 150px;
     position: relative;
-    top: 90px;
-    left: 25px;
+    top: 15px;
+    left: 50px;
   }
-  #enviar {
+  .formulario #enviar {
     position: relative;
-    left: 155px;
-    top: 100px;
-    width: 70px;
-    font-size: 15px;
+    top: 30px;
+    left: 100px;
+    width: 50px;
+    font-size: 10px;
   }
   .enlacecontacto {
     display: inline-flex;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     position: relative;
     left: -20px;
     bottom: 30px;
-    font-size: 15px;
+    font-size: 9px;
   }
   .enlacecontacto:hover {
     text-decoration: none;
@@ -1028,272 +1173,539 @@
   .padre2 {
     display: grid;
     grid-template-areas: "header header header header" "barra barra barra barra" "formulario formulario formulario formulario" "contacto contacto contacto contacto";
-    grid-template-rows: auto 60px auto auto;
-    grid-template-columns: 60px 340px 100px 100px;
+    grid-template-rows: auto 40px auto auto;
+    grid-template-columns: 60px 220px auto 100px;
+  }
+  /*responsive nosotros*/
+  .mapa {
+    display: flex;
+    justify-content: center;
+    grid-area: mapa;
+    background-color: #222124;
+  }
+  .textoNosotros {
+    display: flex;
+    grid-area: textoNosotros;
+    background-color: #222124;
+    justify-content: center;
+  }
+  .mapalocal {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    color: white;
+    font-size: 15px;
+  }
+  #mapa1 {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    top: 150px;
+  }
+  #titulo-nosotros {
+    position: relative;
+    top: 150px;
+  }
+  .ubicacion {
+    display: flex;
+    line-height: 30px;
+    margin-top: 0px;
+    color: white;
+    font-size: 12px;
+    justify-content: flex-start;
+    margin-left: -20px;
+    width: 250px;
+  }
+  .padre3 {
+    display: grid;
+    grid-template-areas: "header header header header" "barra barra barra barra" "mapa mapa mapa mapa" "textoNosotros textoNosotros textoNosotros textoNosotros" "contacto contacto contacto contacto";
+    grid-template-rows: auto 40px 400px auto;
+    grid-template-columns: 60px 70px 100px auto;
+  }
+  .padre3 > div {
+    padding: 20px;
+    font-size: 20px;
+  }
+  .texto-venta {
+    grid-area: textoventa;
+    color: white;
+    font-size: 10px;
+    position: relative;
+    top: 200px;
+    left: 50px;
+    bottom: 0px;
+    width: 200px;
+  }
+  .apartadoventas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222124;
+    width: 506px;
+    height: 1400px;
+  }
+  .ventas {
+    display: flex;
+    padding-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 50px;
+    grid-area: img;
+    border-radius: 20px;
+    border: 2px solid red;
+    width: 200px;
+    height: 200px;
+    background-color: #222124;
+    position: relative;
+    top: 200px;
+  }
+  .btn-comprar {
+    display: flex;
+    width: 60px;
+    flex-direction: column;
+    border: none;
+    padding: 10px;
+    font-size: 12px;
+    color: red;
+    background: black;
+    box-shadow: 2px 2px 10px 0px rgb(0, 85, 212);
+    cursor: pointer;
+    position: relative;
+    top: 10px;
+  }
+  .btn-comprar:hover {
+    background: black;
+    color: white;
+    box-shadow: 2px 2px 10px 0px rgb(255, 59, 38);
+  }
+  .imgVenta1 {
+    display: flex;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+  }
+  .padre4 {
+    display: grid;
+    grid-template-areas: "header header header header" "barra barra barra barra" "img img img img" "textoventa textoventa textoventa textoventa" "contacto contacto contacto contacto";
+    background-color: #222124;
+    grid-template-rows: auto 40px 1500px auto;
+    grid-template-columns: auto auto auto auto;
+  }
+  .padre4 > div {
+    padding: 20px;
+    font-size: 20px;
+  }
+  .texto-oferta {
+    grid-area: textooferta;
+    color: white;
+    font-size: 13px;
+    position: relative;
+    top: 200px;
+    left: 20px;
+    text-shadow: 0 0 10px yellow;
+    width: 250px;
+  }
+  #venta5,
+#venta6,
+#venta7,
+#venta8 {
+    box-shadow: 0 0 10px yellow;
+    -webkit-animation-name: oferta-box;
+            animation-name: oferta-box;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes oferta-box {
+    0% {
+      box-shadow: 0 0 10px yellow;
+    }
+    50% {
+      box-shadow: 0 0 40px yellow;
+    }
+    100% {
+      box-shadow: 0 0 10px yellow;
+    }
+  }
+  @keyframes oferta-box {
+    0% {
+      box-shadow: 0 0 10px yellow;
+    }
+    50% {
+      box-shadow: 0 0 40px yellow;
+    }
+    100% {
+      box-shadow: 0 0 10px yellow;
+    }
+  }
+  .padre5 {
+    display: grid;
+    grid-template-areas: "header header header header" "barra barra barra barra" "img img img img" "textooferta textooferta textooferta textooferta" "contacto contacto contacto contacto";
+    grid-template-rows: auto 40px 1400px auto;
+    grid-template-columns: 60px 60px auto 100px;
+  }
+  .foot {
+    display: flex;
+    flex-direction: column;
+    grid-area: contacto;
+    background-color: black;
+    border-top: 2px solid grey;
+    height: 500px;
+    justify-content: center;
+  }
+  .foot #imagen4 {
+    width: 70px;
+    margin-right: 100px;
+    margin-left: 100px;
+    position: relative;
+    bottom: 50px;
+  }
+  .foot #imagen5 {
+    width: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
+    position: relative;
+    right: 290px;
+    top: 50px;
+  }
+  .foot #imagen6 {
+    width: 90px;
+    margin-right: 50px;
+    margin-left: 100px;
+    position: relative;
+    right: 10px;
+    top: 80px;
+  }
+  .foot .textocontacto {
+    display: flex;
+  }
+  .foot .textocontacto #whatsapp {
+    color: white;
+    font-size: 20px;
+    width: 150px;
+    bottom: 50px;
+    position: relative;
+    left: 200px;
+    bottom: 160px;
+  }
+  .foot .textocontacto #facebook {
+    position: relative;
+    right: 30px;
+    bottom: 10px;
+  }
+  .foot .textocontacto #instagram {
+    position: relative;
+    top: 80px;
+    right: 310px;
+  }
+  .foot .textocontacto .footerlink {
+    color: white;
+    font-size: 20px;
+    margin-top: -50px;
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+  .foot .textocontacto .footerlink:hover {
+    color: red;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  .header {
-    grid-area: header;
-    display: flex;
-    background-color: black;
-    height: 50px;
-    justify-content: center;
+  .padre1 {
+    display: grid;
+    grid-template-areas: "header header header header" "barra barra barra barra" "textoizq textoizq imagender imagender" "imagenetexto imagenetexto imagender imagender" "imagenetexto imagenetexto imagender imagender" "contacto contacto contacto contacto";
+    grid-template-rows: auto 60px auto auto auto;
+    grid-template-columns: auto auto auto auto;
+    /*contenido index*/
   }
-  #logo {
-    height: 50px;
-    width: 50px;
+  .padre1 div {
+    padding: 20px;
+    font-size: 30px;
   }
-  .fondologo {
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    box-shadow: 0 0 50px blue, inset 0 0 50px blue;
-  }
-  #titulo {
-    color: white;
-    font-size: 40px;
-    text-shadow: 0 0 30px blue;
-    padding-left: 20px;
-  }
-  .navegacion {
-    display: flex;
-    padding-top: 0px;
-    grid-area: barra;
-    border-top: 1px solid red;
-    background-color: black;
-    justify-content: center;
-  }
-  .enlace {
-    display: inline-flex;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
-    left: 0px;
-    bottom: 50px;
-    font-size: 20px;
-  }
-  .enlace:hover {
-    text-decoration: none;
-    color: white;
-    padding-left: 5px;
-    padding-right: 5px;
-    background-color: #1C1B20;
-    border-bottom: 3px solid white;
-    box-shadow: inset 5px 5px 20px 10px blue;
-    font-size: 10px;
-  }
-  /*index*/
-  .caja1 {
-    display: flex;
-    justify-content: center;
+  .padre1 .caja1 {
     grid-area: textoizq;
     background-color: #222124;
   }
-  .textocaja1 {
-    font-size: 20px;
+  .padre1 .caja1 .textocaja1 {
+    font-size: 17px;
     color: white;
-    margin-top: 20px;
-    margin-left: 0px;
-    position: relative;
-    left: 30px;
+    margin-top: 100px;
+    margin-left: 100px;
     text-align: left;
     width: 500px;
     border: 1px solid red;
     border-radius: 10px;
   }
-  .caja2 {
+  .padre1 .caja1 .textocaja1 #texto1 {
     display: flex;
     justify-content: center;
-    flex-direction: row;
+  }
+  .padre1 .caja2 {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
     grid-area: imagender;
     background-color: #222124;
     align-items: center;
-    border: 1px solid red;
-    border-left: none;
-    border-right: none;
+    border: 2px solid red;
+    border-top: none;
+    border-bottom: none;
   }
-  .imagenes {
-    border: 1px solid orange;
+  .padre1 .caja2 .imagenes {
+    border: 2px solid white;
     border-radius: 50%;
     margin: 10px;
-    margin-right: 30px;
-    position: relative;
-    left: 25px;
+    margin-left: -60px;
+    margin-right: -60px;
   }
-  #imagen1 {
+  .padre1 .caja2 #imagen1 {
     width: 150px;
   }
-  #imagen2 {
-    width: 250px;
+  .padre1 .caja2 #imagen2 {
+    width: 200px;
   }
-  #imagen3 {
-    width: 190px;
+  .padre1 .caja2 #imagen3 {
+    width: 200px;
   }
-  .caja3 {
+  .padre1 .caja3 {
     display: flex;
+    flex-direction: column;
     grid-area: imagenetexto;
     background-color: #222124;
-    justify-content: flex-start;
+    align-items: center;
   }
-  .imagen789 {
-    position: relative;
-    top: 20px;
-    right: 150px;
-    width: 400px;
+  .padre1 .caja3 .imagen789 {
+    width: 300px;
     border-radius: 20px;
     box-shadow: 0 0 5px red;
   }
-  .textoImagen {
+  .padre1 .caja3 .textoImagen {
     color: white;
-    width: 280px;
-    font-size: 20px;
-    position: relative;
-    left: 200px;
-    bottom: 130px;
+    font-size: 18px;
   }
-  .foot {
-    display: flex;
-    grid-area: contacto;
-    background-color: black;
-    border-top: 2px solid grey;
-    height: 200px;
-  }
-  #imagen4 {
-    width: 50px;
-    position: relative;
-    bottom: 20px;
-    left: 140px;
-  }
-  #imagen5 {
-    width: 100px;
-    position: relative;
-    top: 60px;
-    right: 140px;
-  }
-  #imagen6 {
-    width: 80px;
-    position: relative;
-    top: 125px;
-    right: 435px;
-  }
-  #whatsapp {
-    color: white;
-    font-size: 20px;
-    position: relative;
-    left: 110px;
-    bottom: 0px;
-  }
-  #instagram {
-    position: relative;
-    left: 100px;
-    top: 70px;
-  }
-  #facebook {
-    position: relative;
-    bottom: -25px;
-  }
-  .textocontacto {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    position: relative;
-    bottom: 70px;
-    right: 140px;
-  }
-  .footerlink {
-    color: white;
-    font-size: 20px;
-    margin-top: 0px;
-  }
-  .footerlink:hover {
-    color: red;
-  }
-  body {
-    margin: 0px;
-  }
-  .padre {
+  /*estilos de la pagina contacto.html*/
+  .padre2 {
     display: grid;
-    grid-template-areas: "header header header header" "barra barra barra barra" "textoizq textoizq textoizq textoizq" "imagender imagender imagender imagender" "imagenetexto imagenetexto imagenetexto imagenetexto" "contacto contacto contacto contacto";
+    grid-template-areas: "header header header header" "barra barra barra barra" "formulario formulario formulario formulario" "contacto contacto contacto contacto";
     grid-template-rows: auto 60px auto auto;
-    grid-template-columns: 60px 765px 100px 100px;
+    grid-template-columns: auto auto auto auto;
+    /*contenido pagina contacto.html*/
   }
-  /*responsive tablet contacto*/
-  .navegacion {
-    border-bottom: none;
+  .padre2 div {
+    padding: 20px;
+    font-size: 20px;
   }
-  .formulario {
+  .padre2 .formulario {
     display: flex;
     justify-content: center;
     grid-area: formulario;
     background-color: #222124;
   }
-  #contacto_nav {
+  .padre2 .formulario #contacto_nav {
     display: flex;
     flex-direction: column;
     padding: 20px;
     border-radius: 10px;
-    width: 400px;
+    width: 600px;
     height: 600px;
     border: 2px solid red;
     margin-top: 50px;
   }
-  .formulario2 {
+  .padre2 .formulario #contacto_nav .formulario2 {
+    display: flex;
+    flex-direction: column;
     color: white;
-    font-size: 16px;
-    padding-top: 20px;
   }
-  .formulario1 {
-    width: 100px;
-    font-size: 15px;
+  .padre2 .formulario #contacto_nav .formulario1 {
+    width: 200px;
   }
-  #label_comentario {
+  .padre2 .formulario #label_comentario {
     color: white;
-    font-size: 16px;
     margin-top: 10px;
     position: relative;
-    top: 80px;
-    right: 40px;
+    left: 30px;
   }
-  #comentario {
+  .padre2 .formulario #comentario {
     border-radius: 10px;
-    width: 350px;
-    height: 220px;
+    width: 450px;
+    height: 300px;
     position: relative;
-    top: 90px;
-    left: 25px;
+    left: 20px;
   }
-  #enviar {
-    position: relative;
-    left: 155px;
-    top: 100px;
+  .padre2 .formulario #enviar {
     width: 70px;
-    font-size: 15px;
   }
-  .enlacecontacto {
-    display: inline-flex;
-    padding-left: 20px;
-    padding-right: 20px;
-    position: relative;
-    left: -20px;
-    bottom: 30px;
+  /*estilos de la pagina nosotros.html*/
+  .padre3 {
+    display: grid;
+    grid-template-areas: "header header header header" "barra barra barra barra" "mapa mapa mapa mapa  " "textoNosotros textoNosotros textoNosotros textoNosotros" "contacto contacto contacto contacto";
+    grid-template-rows: auto 60px 500px auto;
+    grid-template-columns: auto auto auto auto;
+    /*contenido nosotros.html*/
+  }
+  .padre3 div {
+    padding: 20px;
     font-size: 20px;
   }
-  .enlacecontacto:hover {
-    text-decoration: none;
-    color: white;
-    padding-left: 5px;
-    padding-right: 5px;
-    background-color: #1C1B20;
-    border-bottom: 3px solid white;
-    box-shadow: inset 5px 5px 20px 10px blue;
-    font-size: 12px;
+  .padre3 .mapa {
+    display: flex;
+    grid-area: mapa;
+    background-color: #222124;
   }
-  .padre2 {
+  .padre3 .mapa .mapalocal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 250px;
+    color: white;
+    font-size: 24px;
+  }
+  .padre3 .mapa .mapalocal #mapa1 {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+  }
+  .padre3 .textoNosotros {
+    grid-area: textoNosotros;
+    background-color: #222124;
+  }
+  .padre3 .textoNosotros .ubicacion {
+    display: flex;
+    line-height: 50px;
+    position: relative;
+    bottom: 50px;
+    color: white;
+    font-size: 18px;
+    justify-content: center;
+  }
+  /*estilos de la pagina ofertas.html*/
+  .padre4 {
     display: grid;
-    grid-template-areas: "header header header header" "barra barra barra barra" "formulario formulario formulario formulario" "contacto contacto contacto contacto";
-    grid-template-rows: auto 60px auto auto;
-    grid-template-columns: 60px 765px 100px 100px;
+    grid-template-areas: "header header header header" "barra barra barra barra" " img img img img " "textoventa textoventa textoventa textoventa" "contacto contacto contacto contacto";
+    background-color: #222124;
+    grid-template-rows: auto 60px 2000px auto;
+    grid-template-columns: auto auto auto auto;
+    /*contenido pagina ofertas.html*/
+  }
+  .padre4 div {
+    padding: 20px;
+    font-size: 20px;
+  }
+  /*estilos de la pagina tienda.html*/
+  .padre5 {
+    display: grid;
+    grid-template-areas: "header header header header" "barra barra barra barra" "img img img img" "textooferta textooferta textooferta textooferta" "contacto contacto contacto contacto";
+    grid-template-rows: auto 60px 2000px auto;
+    grid-template-columns: auto auto auto auto;
+  }
+  .padre5 div {
+    padding: 20px;
+    font-size: 20px;
+  }
+  /*contenido pagina tienda.html*/
+  .apartadoventas {
+    background-color: #222124;
+    width: 1040px;
+  }
+  .apartadoventas .ventas {
+    display: flex;
+    padding-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 350px;
+    grid-area: img;
+    border-radius: 20px;
+    border: 2px solid red;
+    width: 300px;
+    height: 300px;
+    background-color: #222124;
+  }
+  .apartadoventas .ventas .imgVenta1 {
+    display: flex;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+  }
+  .apartadoventas .ventas .btn-comprar {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 10px;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    color: red;
+    background: black;
+    box-shadow: 2px 2px 10px 0px rgb(0, 85, 212);
+    cursor: pointer;
+  }
+  .apartadoventas .ventas .btn-comprar:hover {
+    background: black;
+    color: white;
+    box-shadow: 2px 2px 10px 0px rgb(255, 59, 38);
+  }
+  .apartadoventas p {
+    display: flex;
+    justify-content: center;
+    grid-area: textoventa;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 300px;
+    width: 400px;
+  }
+  .foot {
+    display: flex;
+    flex-direction: column;
+    grid-area: contacto;
+    background-color: black;
+    border-top: 2px solid grey;
+    height: 200px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .foot #imagen4 {
+    width: 40px;
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+  .foot #imagen5 {
+    width: 70px;
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+  .foot #imagen6 {
+    width: 80px;
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+  .foot .textocontacto {
+    display: flex;
+    align-items: center;
+  }
+  .foot .textocontacto #whatsapp {
+    color: white;
+    font-size: 25px;
+    margin-top: -20px;
+  }
+  .foot .textocontacto .footerlink {
+    color: white;
+    font-size: 25px;
+    margin-top: -50px;
+    margin-right: 130px;
+    margin-left: 120px;
+    position: relative;
+    left: 100px;
+  }
+  .foot .textocontacto .footerlink:hover {
+    color: red;
   }
 }
 /*estilos de la pagina index.html*/

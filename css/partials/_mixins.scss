@@ -1,0 +1,18 @@
+@import "./partials/variables";
+
+@media screen and (min-width: 601px ) and (max-width: 1024px){
+
+@mixin botones600px($border, $color,$position){
+    display: $display;
+        flex-direction: column;
+        position: $position;
+       top: 10px;
+          border: $border;
+          padding: 10px;
+          font-size: 18px;
+          color: $color;
+          background: $botonCompra;
+          box-shadow: 2px 2px 10px 0px rgba(0,85,212,10.0);
+        cursor: pointer;
+}
+}
