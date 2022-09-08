@@ -804,77 +804,7 @@
     grid-template-columns: 60px 60px auto 100px;
 
   }
-  .foot{
-    display: flex;
-    flex-direction: column;
-    grid-area: contacto;
-    background-color: black;
-    border-top: 2px solid grey;
-    height: 500px;
-    
-    justify-content: center;
-    #imagen4{
-        width: 70px;
-        margin-right: 100px;
-        margin-left: 100px;
-      position: relative;
-      bottom: 50px;
-      
-      }
-      #imagen5{
-        width: 100px;
-        margin-right: 100px;
-        margin-left: 100px;
-        position: relative;
-        right: 290px;
-        top: 50px;
-      }
-      #imagen6{
-        width: 90px;
-        margin-right: 50px;
-        margin-left: 100px;
-        position: relative;
-        right: 10px;
-        top: 80px;
-      }
-      .textocontacto{
-        display: flex;
-      
-        #whatsapp{
-            color: $colorLetra;
-            font-size: 20px;
-            width: 150px;
-           bottom: 50px;
-            position: relative;
-          left: 200px;
-          bottom: 160px;
-
-          }
-       #facebook{
-        position: relative;
-        right: 30px;
-        bottom: 10px;
-       }
-
-       #instagram{
-        position: relative;
-        top: 80px;
-        right: 310px;
-       }
-          .footerlink{
-            color: $colorLetra;
-            font-size: 20px;
-            margin-top: -50px;
-            margin-right: 100px;
-            margin-left: 100px;
-            
-            &:hover{
-                color: red;
-              }
-          }
-          
-      }
-  }
+  
 }
   @media screen and (min-width: 601px ) and (max-width: 1024px){
     .padre1{
@@ -1177,54 +1107,6 @@
             width: 400px;
           }
     }
-    .foot{
-      display: flex;
-      flex-direction: column;
-      grid-area: contacto;
-      background-color: black;
-      border-top: 2px solid grey;
-      height: 200px;
-      align-items: center;
-      justify-content: space-around;
-      #imagen4{
-          width: 40px;
-          margin-right: 100px;
-          margin-left: 100px;
-        
-        
-        }
-        #imagen5{
-          width: 70px;
-          margin-right: 100px;
-          margin-left: 100px;
-        }
-        #imagen6{
-          width: 80px;
-          margin-right: 100px;
-          margin-left: 100px;
-        }
-        .textocontacto{
-          display: flex;
-          align-items: center;
-          #whatsapp{
-              color: $colorLetra;
-              font-size: 25px;
-              margin-top: -20px;
-            }
-            .footerlink{
-              color: $colorLetra;
-              font-size: 25px;
-              margin-top: -50px;
-              margin-right: 130px;
-              margin-left: 120px;
-              position: relative;
-              left: 100px;
-              &:hover{
-                  color: red;
-                }
-            }
-            
-        }
-    }
+    
   }
   
