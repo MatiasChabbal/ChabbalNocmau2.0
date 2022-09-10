@@ -184,13 +184,7 @@
 }
 @media screen and (max-width: 480px) {
   /*titulo y logo*/
-  .padre1,
-.padre2,
-.padre3,
-.padre4,
-.padre5 {
-    /*navegador*/
-  }
+ 
   .padre1 .header,
 .padre2 .header,
 .padre3 .header,
@@ -388,13 +382,7 @@
 }
 @media screen and (min-width: 481px) and (max-width: 600px) {
   /*titulo y logo*/
-  .padre1,
-.padre2,
-.padre3,
-.padre4,
-.padre5 {
-    /*navegador*/
-  }
+ 
   .padre1 .header,
 .padre2 .header,
 .padre3 .header,
