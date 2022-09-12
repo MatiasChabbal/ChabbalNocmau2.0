@@ -13,12 +13,13 @@
         'imagender imagender imagender imagender'
         'imagenetexto imagenetexto imagenetexto imagenetexto'
         'contacto contacto contacto contacto';
-        grid-template-rows: auto 40px auto auto auto;
+        grid-template-rows: auto 60px auto auto auto auto;
         grid-template-columns: auto auto auto auto;
     }
    
     .caja1{
-      @extend %flex;
+      display: flex;
+    justify-content: center;
       
       grid-area: textoizq;
       background-color:#222124;
@@ -125,7 +126,8 @@
     /*responsive contacto*/
     
     .formulario{
-      @extend %flex;
+      display: flex;
+    justify-content: center;
       
       grid-area: formulario;
       background-color: #222124;
@@ -220,13 +222,15 @@
     }
     /*responsive nosotros*/
     .mapa{
-      @extend %flex;
+      display: flex;
+      justify-content: center;
       grid-area: mapa;
       background-color: #222124
   
     }
     .textoNosotros{
-      @extend %flex;
+      display: flex;
+      justify-content: center;
       grid-area: textoNosotros;
       background-color: #222124;
       
@@ -422,7 +426,8 @@
       grid-template-columns: 60px 170px auto auto;
   
   .caja1{
-    @extend %flex;
+    display: flex;
+    justify-content: center;
     grid-area: textoizq;
     background-color:#222124;
     height: 600px;
@@ -459,7 +464,8 @@
     
     
     .imagenes{
-     @extend %flex;
+      display: flex;
+      justify-content: center;
       border: 1px solid orange;
       border-radius: 50%;
       margin: 10px;
