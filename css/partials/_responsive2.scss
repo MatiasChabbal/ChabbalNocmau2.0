@@ -19,8 +19,8 @@
    
     .caja1{
       display: flex;
-    justify-content: left;
-      
+    justify-content: center;
+      width: 480px;
       grid-area: textoizq;
       background-color:#222124;
       height: 600px;
@@ -39,7 +39,7 @@
         border-radius: 10px;
         position: relative;
         top: 200px;
-        left: 30px;
+        
         background-color: #222124;
       }
       }
@@ -47,7 +47,7 @@
     
     .caja2{
       display: flex;
-      
+      width: 480px;
       flex-direction: column;
       grid-area: imagender;
       background-color: #222124;
@@ -63,8 +63,7 @@
         border-radius: 50%;
         margin: 10px;
         margin-right: 50px;
-        position: relative;
-        left: 25px;
+        
         
       }
       #imagen1{
@@ -87,6 +86,7 @@
       background-color: #222124;
       justify-content: flex-start;
       align-items: center;
+      width: 480px;
       height: 800px;
       .imagen789{
         display: flex;
@@ -219,7 +219,7 @@
       'barra barra barra barra'
       'formulario formulario formulario formulario'
       'contacto contacto contacto contacto';
-      grid-template-rows: auto 40px auto auto ;
+      grid-template-rows: auto 160px auto auto ;
       grid-template-columns: 60px 220px 100px 100px;
     }
     /*responsive nosotros*/
@@ -280,7 +280,7 @@
       'mapa mapa mapa mapa'
       'textoNosotros textoNosotros textoNosotros textoNosotros'
       'contacto contacto contacto contacto';
-      grid-template-rows: auto 40px 400px auto ;
+      grid-template-rows: auto 160px 400px auto ;
       grid-template-columns: 60px 70px 100px auto;
   
   
@@ -353,7 +353,7 @@
       'textoventa textoventa textoventa textoventa'
       'contacto contacto contacto contacto';
       background-color: #222124;
-      grid-template-rows: auto 40px 1500px auto ;
+      grid-template-rows: auto 160px 1500px auto ;
       grid-template-columns: 60px 60px auto 100px;
   
     }
@@ -397,7 +397,7 @@
       'img img img img'
       'textooferta textooferta textooferta textooferta'
       'contacto contacto contacto contacto';
-      grid-template-rows: auto 40px 1400px auto ;
+      grid-template-rows: auto 160px 1400px auto ;
       grid-template-columns: auto auto auto auto ;
   
     }
@@ -408,13 +408,7 @@
    
     
     /*index*/
-    .container-fluid{
-      background-color: red;
-      width: 10px;
-      height: 10px;
-      position: relative;
-      right: 100px;
-  }
+   
   .padre1{
       display: grid;
       grid-template-areas:
@@ -424,7 +418,7 @@
       'imagender imagender imagender imagender'
       'imagenetexto imagenetexto imagenetexto imagenetexto'
       'contacto contacto contacto contacto';
-      grid-template-rows: auto 40px auto auto auto;
+      grid-template-rows: auto 160px auto auto auto;
       grid-template-columns: 60px 170px auto auto;
   
   .caja1{
@@ -433,7 +427,7 @@
     grid-area: textoizq;
     background-color:#222124;
     height: 600px;
-    
+    width: 600px;
     .cajatexto{
       background-color: #222124;
     .textocaja1{
@@ -455,6 +449,7 @@
   }
   
   .caja2{
+    width: 600px;
     display: flex;
     justify-content: center;
     grid-area: imagender;
@@ -496,6 +491,7 @@
     justify-content: flex-start;
     align-items: center;
     height: 800px;
+    width: 600px;
     .imagen789{
       display: flex;
       flex-direction: column;
@@ -617,7 +613,7 @@
     'barra barra barra barra'
     'formulario formulario formulario formulario'
     'contacto contacto contacto contacto';
-    grid-template-rows: auto 40px auto auto ;
+    grid-template-rows: auto 160px auto auto ;
     grid-template-columns: 60px 220px auto 100px;
   }
   /*responsive nosotros*/
@@ -677,8 +673,8 @@
     'mapa mapa mapa mapa'
     'textoNosotros textoNosotros textoNosotros textoNosotros'
     'contacto contacto contacto contacto';
-    grid-template-rows: auto 40px 400px auto ;
-    grid-template-columns: 60px 70px 100px auto;
+    grid-template-rows: auto 160px auto auto ;
+    grid-template-columns: auto auto auto auto;
 
 
   }
@@ -703,7 +699,7 @@
     align-items: center;
     
       background-color: #222124;
-      width: 506px;
+      width: 600px;
       height: 1400px;
   }
 
@@ -764,7 +760,7 @@
     'textoventa textoventa textoventa textoventa'
     'contacto contacto contacto contacto';
     background-color: #222124;
-    grid-template-rows: auto 40px 1500px auto ;
+    grid-template-rows: auto 160px 1500px auto ;
     grid-template-columns: auto auto auto auto;
 
   }
@@ -808,8 +804,8 @@
     'img img img img'
     'textooferta textooferta textooferta textooferta'
     'contacto contacto contacto contacto';
-    grid-template-rows: auto 40px 1400px auto ;
-    grid-template-columns: 60px 60px auto 100px;
+    grid-template-rows: auto 160px 1400px auto ;
+    grid-template-columns: auto auto auto auto;
 
   }
   
@@ -824,7 +820,7 @@
       'imagenetexto imagenetexto imagender imagender'
       'imagenetexto imagenetexto imagender imagender'
       'contacto contacto contacto contacto';
-      grid-template-rows: auto 60px auto auto auto;
+      grid-template-rows: auto 250px auto auto auto;
       grid-template-columns: auto auto auto auto;
       div {
           padding: 20px ;
@@ -854,7 +850,7 @@
     }
     .caja2{
       display: $display;
-      width: 300px;
+      
       flex-direction: column;
       grid-area: imagender;
       background-color: $colorFondo;
