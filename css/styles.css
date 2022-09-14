@@ -303,56 +303,62 @@
     grid-area: contacto;
     background-color: black;
     border-top: 2px solid grey;
-    height: 400px;
-    align-items: left;
+    height: 500px;
+    justify-content: center;
   }
   .foot #imagen4 {
-    width: 50px;
+    width: 70px;
+    margin-right: 100px;
+    margin-left: 100px;
     position: relative;
-    top: 30px;
-    right: 40px;
+    bottom: 50px;
   }
   .foot #imagen5 {
     width: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
     position: relative;
-    right: 65px;
+    right: 290px;
     top: 50px;
   }
   .foot #imagen6 {
-    width: 80px;
+    width: 90px;
+    margin-right: 50px;
+    margin-left: 100px;
     position: relative;
-    right: 55px;
-    top: 60px;
+    right: 10px;
+    top: 80px;
   }
   .foot .textocontacto {
     display: flex;
-    flex-direction: column;
-    align-items: left;
-    position: relative;
-    bottom: 90px;
-    right: 140px;
   }
   .foot .textocontacto #whatsapp {
     color: white;
     font-size: 20px;
+    width: 120px;
+    bottom: 50px;
     position: relative;
-    left: 110px;
-    bottom: 80px;
-  }
-  .foot .textocontacto #instagram {
-    position: relative;
-    top: 65px;
+    left: 200px;
+    bottom: 160px;
   }
   .foot .textocontacto #facebook {
     position: relative;
-    bottom: 25px;
+    right: 30px;
+    bottom: 10px;
   }
-  .foot .footerlink {
+  .foot .textocontacto #instagram {
+    position: relative;
+    top: 80px;
+    right: 310px;
+  }
+  .foot .textocontacto .footerlink {
     color: white;
-    font-size: 15px;
-    margin-top: 0px;
+    font-size: 20px;
+    margin-top: -50px;
+    margin-right: 100px;
+    margin-left: 100px;
   }
-  .foot .footerlink:hover {
+  .foot .textocontacto .footerlink:hover {
     color: red;
   }
 }
@@ -535,7 +541,7 @@
     grid-area: header;
     display: flex;
     background-color: black;
-    height: 60px !important;
+    height: 120px !important;
     justify-content: left;
   }
   .padre1 .header .fondologo,
@@ -547,8 +553,8 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    height: 40px;
-    width: 40px;
+    height: 100px;
+    width: 100px;
     box-shadow: 0 0 20px blue, inset 0 0 50px blue;
     -webkit-animation-name: fondologo;
             animation-name: fondologo;
@@ -590,8 +596,8 @@
 .padre3 .header .fondologo #logo,
 .padre4 .header .fondologo #logo,
 .padre5 .header .fondologo #logo {
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
   }
   .padre1 .header #titulo,
 .padre2 .header #titulo,
@@ -601,6 +607,8 @@
     color: white;
     font-size: 40px;
     text-shadow: 0 0 30px blue;
+    position: relative;
+    top: 20px;
     -webkit-animation-name: title;
             animation-name: title;
     -webkit-animation-duration: 4s;
@@ -639,46 +647,87 @@
 .padre5 .navegacion {
     height: 200px;
     display: grid;
-    justify-content: center;
     padding-top: 0px;
     grid-area: barra;
     border-top: 3px solid red;
     border-bottom: 3px solid red;
     background-color: black;
   }
+  .padre1 .navegacion .navbar-toggler,
+.padre2 .navegacion .navbar-toggler,
+.padre3 .navegacion .navbar-toggler,
+.padre4 .navegacion .navbar-toggler,
+.padre5 .navegacion .navbar-toggler {
+    background-color: grey;
+  }
+  .padre1 .enlacecontacto2,
+.padre2 .enlacecontacto2,
+.padre3 .enlacecontacto2,
+.padre4 .enlacecontacto2,
+.padre5 .enlacecontacto2 {
+    text-decoration: none;
+    width: 150px;
+    position: relative;
+    left: 105px;
+    bottom: 30px;
+    font-size: 20px;
+  }
+  .padre1 .enlacecontacto2:hover,
+.padre2 .enlacecontacto2:hover,
+.padre3 .enlacecontacto2:hover,
+.padre4 .enlacecontacto2:hover,
+.padre5 .enlacecontacto2:hover {
+    text-decoration: none;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+  }
   .padre1 .enlacecontacto,
-.padre1 #tienda,
-.padre1 #ofertas,
 .padre2 .enlacecontacto,
+.padre3 .enlacecontacto,
+.padre4 .enlacecontacto,
+.padre5 .enlacecontacto {
+    text-decoration: none;
+    position: relative;
+    left: 100px;
+    font-size: 20px;
+  }
+  .padre1 .enlacecontacto:hover,
+.padre2 .enlacecontacto:hover,
+.padre3 .enlacecontacto:hover,
+.padre4 .enlacecontacto:hover,
+.padre5 .enlacecontacto:hover {
+    text-decoration: none;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #1C1B20;
+    border-bottom: 3px solid white;
+    font-size: 20px;
+  }
+  .padre1 #tienda,
+.padre1 #ofertas,
 .padre2 #tienda,
 .padre2 #ofertas,
-.padre3 .enlacecontacto,
 .padre3 #tienda,
 .padre3 #ofertas,
-.padre4 .enlacecontacto,
 .padre4 #tienda,
 .padre4 #ofertas,
-.padre5 .enlacecontacto,
 .padre5 #tienda,
 .padre5 #ofertas {
     text-decoration: none;
     position: relative;
-    left: 300px;
-    font-size: 10px;
+    font-size: 20px;
   }
-  .padre1 .enlacecontacto:hover,
-.padre1 #tienda:hover,
+  .padre1 #tienda:hover,
 .padre1 #ofertas:hover,
-.padre2 .enlacecontacto:hover,
 .padre2 #tienda:hover,
 .padre2 #ofertas:hover,
-.padre3 .enlacecontacto:hover,
 .padre3 #tienda:hover,
 .padre3 #ofertas:hover,
-.padre4 .enlacecontacto:hover,
 .padre4 #tienda:hover,
 .padre4 #ofertas:hover,
-.padre5 .enlacecontacto:hover,
 .padre5 #tienda:hover,
 .padre5 #ofertas:hover {
     text-decoration: none;
@@ -689,6 +738,17 @@
     border-bottom: 3px solid white;
     box-shadow: inset 5px 5px 20px 10px blue;
     font-size: 20px;
+  }
+  .padre1 .dropdown-menu,
+.padre2 .dropdown-menu,
+.padre3 .dropdown-menu,
+.padre4 .dropdown-menu,
+.padre5 .dropdown-menu {
+    display: flex none;
+    align-items: center;
+    background-color: #1C1B20;
+    width: 200px;
+    position: relative;
   }
   .padre1 .etiquetaMenu,
 .padre2 .etiquetaMenu,
@@ -705,6 +765,14 @@
 .padre5 .cajabotton {
     position: relative;
     top: 500px;
+  }
+  .padre1 .etiquetaMenu,
+.padre2 .etiquetaMenu,
+.padre3 .etiquetaMenu,
+.padre4 .etiquetaMenu,
+.padre5 .etiquetaMenu {
+    position: relative;
+    left: 10px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 600px) {
@@ -911,7 +979,7 @@
     top: 10px;
   }
 }
-@media screen and (max-width: 601px) and (max-width: 1024px) {
+@media screen and (min-width: 601px) and (max-width: 1024px) {
   /*titulo y logo*/
   .padre1,
 .padre2,
@@ -1100,8 +1168,19 @@
     top: 500px;
   }
 }
-@media screen and (max-width: 1024px) and (max-width: 2000px) {
-  .header {
+@media screen and (min-width: 1025px) and (max-width: 2000px) {
+  .padre1,
+.padre2,
+.padre3,
+.padre4,
+.padre5 {
+    /*navegador*/
+  }
+  .padre1 .header,
+.padre2 .header,
+.padre3 .header,
+.padre4 .header,
+.padre5 .header {
     grid-area: header;
     display: flex;
     background-color: black;
@@ -1109,7 +1188,11 @@
     align-items: center;
     justify-content: center;
   }
-  .header .fondologo {
+  .padre1 .header .fondologo,
+.padre2 .header .fondologo,
+.padre3 .header .fondologo,
+.padre4 .header .fondologo,
+.padre5 .header .fondologo {
     border-radius: 50%;
     height: 110px;
     width: 110px;
@@ -1149,11 +1232,19 @@
       transform: rotate(360deg);
     }
   }
-  .header .fondologo #logo {
+  .padre1 .header .fondologo #logo,
+.padre2 .header .fondologo #logo,
+.padre3 .header .fondologo #logo,
+.padre4 .header .fondologo #logo,
+.padre5 .header .fondologo #logo {
     height: 70px;
     width: 70px;
   }
-  .header #titulo {
+  .padre1 .header #titulo,
+.padre2 .header #titulo,
+.padre3 .header #titulo,
+.padre4 .header #titulo,
+.padre5 .header #titulo {
     color: white;
     font-size: 50px;
     text-shadow: 0 0 30px blue;
@@ -1188,8 +1279,11 @@
       text-shadow: 0 0 30px blue;
     }
   }
-  /*navegador*/
-  .navegacion {
+  .padre1 .navegacion,
+.padre2 .navegacion,
+.padre3 .navegacion,
+.padre4 .navegacion,
+.padre5 .navegacion {
     display: grid;
     justify-content: center;
     padding-top: 0px;
@@ -1198,20 +1292,44 @@
     border-bottom: 3px solid red;
     background-color: black;
   }
-  .navegacion .enlacecontacto,
-.navegacion #tienda,
-.navegacion #ofertas {
+  .padre1 .navegacion .enlacecontacto,
+.padre1 .navegacion #tienda,
+.padre1 .navegacion #ofertas,
+.padre2 .navegacion .enlacecontacto,
+.padre2 .navegacion #tienda,
+.padre2 .navegacion #ofertas,
+.padre3 .navegacion .enlacecontacto,
+.padre3 .navegacion #tienda,
+.padre3 .navegacion #ofertas,
+.padre4 .navegacion .enlacecontacto,
+.padre4 .navegacion #tienda,
+.padre4 .navegacion #ofertas,
+.padre5 .navegacion .enlacecontacto,
+.padre5 .navegacion #tienda,
+.padre5 .navegacion #ofertas {
     text-decoration: none;
     display: flex;
     padding-left: 30px;
     padding-right: 30px;
     position: relative;
-    bottom: 65px;
+    bottom: 40px;
     font-size: 30px;
   }
-  .navegacion .enlacecontacto:hover,
-.navegacion #tienda:hover,
-.navegacion #ofertas:hover {
+  .padre1 .navegacion .enlacecontacto:hover,
+.padre1 .navegacion #tienda:hover,
+.padre1 .navegacion #ofertas:hover,
+.padre2 .navegacion .enlacecontacto:hover,
+.padre2 .navegacion #tienda:hover,
+.padre2 .navegacion #ofertas:hover,
+.padre3 .navegacion .enlacecontacto:hover,
+.padre3 .navegacion #tienda:hover,
+.padre3 .navegacion #ofertas:hover,
+.padre4 .navegacion .enlacecontacto:hover,
+.padre4 .navegacion #tienda:hover,
+.padre4 .navegacion #ofertas:hover,
+.padre5 .navegacion .enlacecontacto:hover,
+.padre5 .navegacion #tienda:hover,
+.padre5 .navegacion #ofertas:hover {
     text-decoration: none;
     color: white;
     padding-left: 30px;
@@ -1221,16 +1339,32 @@
     box-shadow: inset 5px 5px 20px 10px blue;
     font-size: 27px;
   }
-  .navegacion .etiquetaMenu {
+  .padre1 .navegacion .etiquetaMenu,
+.padre2 .navegacion .etiquetaMenu,
+.padre3 .navegacion .etiquetaMenu,
+.padre4 .navegacion .etiquetaMenu,
+.padre5 .navegacion .etiquetaMenu {
     text-decoration: none;
     color: white;
   }
-  .navegacion .dropdown-menu {
+  .padre1 .navegacion .dropdown-menu,
+.padre2 .navegacion .dropdown-menu,
+.padre3 .navegacion .dropdown-menu,
+.padre4 .navegacion .dropdown-menu,
+.padre5 .navegacion .dropdown-menu {
     background-color: #1C1B20;
     border: 1px solid red;
   }
-  .navegacion #tienda,
-.navegacion #ofertas {
+  .padre1 .navegacion #tienda,
+.padre1 .navegacion #ofertas,
+.padre2 .navegacion #tienda,
+.padre2 .navegacion #ofertas,
+.padre3 .navegacion #tienda,
+.padre3 .navegacion #ofertas,
+.padre4 .navegacion #tienda,
+.padre4 .navegacion #ofertas,
+.padre5 .navegacion #tienda,
+.padre5 .navegacion #ofertas {
     position: relative;
     top: 10px;
   }
@@ -1240,12 +1374,12 @@
   .padre1 {
     display: grid;
     grid-template-areas: "header header header header" "barra barra barra barra" "textoizq textoizq textoizq textoizq" "imagender imagender imagender imagender" "imagenetexto imagenetexto imagenetexto imagenetexto" "contacto contacto contacto contacto";
-    grid-template-rows: auto 60px auto auto auto auto;
-    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto 160px auto auto auto;
+    grid-template-columns: 60px 40px auto auto;
   }
   .caja1 {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     grid-area: textoizq;
     background-color: #222124;
     height: 600px;
@@ -1264,6 +1398,7 @@
     border-radius: 10px;
     position: relative;
     top: 200px;
+    left: 30px;
     background-color: #222124;
   }
   .caja2 {

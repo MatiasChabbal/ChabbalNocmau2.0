@@ -13,13 +13,13 @@
         'imagender imagender imagender imagender'
         'imagenetexto imagenetexto imagenetexto imagenetexto'
         'contacto contacto contacto contacto';
-        grid-template-rows: auto 60px auto auto auto auto;
-        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto 160px  auto auto auto ;
+        grid-template-columns: 60px 40px auto auto ;
     }
    
     .caja1{
       display: flex;
-    justify-content: center;
+    justify-content: left;
       
       grid-area: textoizq;
       background-color:#222124;
@@ -39,6 +39,7 @@
         border-radius: 10px;
         position: relative;
         top: 200px;
+        left: 30px;
         background-color: #222124;
       }
       }
@@ -46,6 +47,7 @@
     
     .caja2{
       display: flex;
+      
       flex-direction: column;
       grid-area: imagender;
       background-color: #222124;
