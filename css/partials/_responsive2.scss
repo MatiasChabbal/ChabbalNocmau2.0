@@ -906,7 +906,7 @@
         'barra barra barra barra'
         'formulario formulario formulario formulario'
         'contacto contacto contacto contacto';
-        grid-template-rows: auto 60px auto auto ;
+        grid-template-rows: auto 250px auto auto ;
         grid-template-columns: auto auto auto auto;
         div {
             padding: 20px ;
@@ -970,7 +970,7 @@
         'textoNosotros textoNosotros textoNosotros textoNosotros'
         'contacto contacto contacto contacto';
       
-        grid-template-rows: auto 60px 500px auto ;
+        grid-template-rows: auto 250px 500px auto ;
         grid-template-columns: auto auto auto auto;
         div {
             padding: 20px ;
@@ -1028,7 +1028,7 @@
         'textoventa textoventa textoventa textoventa'
         'contacto contacto contacto contacto';
         background-color: $colorFondo;
-        grid-template-rows: auto 60px 2000px auto ;
+        grid-template-rows: auto 250px 2000px auto ;
         grid-template-columns: auto auto auto auto;
         div {
             padding: 20px ;
@@ -1052,7 +1052,7 @@
       'img img img img'
       'textooferta textooferta textooferta textooferta'
       'contacto contacto contacto contacto';
-      grid-template-rows: auto 60px 2000px auto ;
+      grid-template-rows: auto 250px 2000px auto ;
       grid-template-columns: auto auto auto auto;
         div {
             padding: 20px ;

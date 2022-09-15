@@ -295,7 +295,6 @@
     width: 650px;
   }
 }
-/*titulo y logo*/
 @media screen and (max-width: 480px) {
   .foot {
     display: flex;
@@ -332,22 +331,25 @@
   }
   .foot .textocontacto {
     display: flex;
+    flex-direction: column;
   }
   .foot .textocontacto #whatsapp {
     color: white;
-    font-size: 13px;
-    width: 200px;
+    font-size: 14px;
+    width: 200px !important;
     position: relative;
     left: 150px;
-    bottom: 150px;
+    bottom: 130px;
   }
   .foot .textocontacto #facebook {
     position: relative;
+    left: 50px;
+    bottom: 10px;
   }
   .foot .textocontacto #instagram {
     position: relative;
-    top: 80px;
-    right: 255px;
+    top: 100px;
+    left: 50px;
   }
   .foot .textocontacto .footerlink {
     color: white;
@@ -397,25 +399,25 @@
   }
   .foot .textocontacto {
     display: flex;
+    flex-direction: column;
   }
   .foot .textocontacto #whatsapp {
     color: white;
     font-size: 17px;
     width: 150px;
-    bottom: 50px;
     position: relative;
     left: 200px;
-    bottom: 160px;
+    bottom: 140px;
   }
   .foot .textocontacto #facebook {
     position: relative;
-    left: 30px;
-    bottom: 10px;
+    left: 120px;
+    bottom: 20px;
   }
   .foot .textocontacto #instagram {
     position: relative;
-    top: 80px;
-    right: 250px;
+    top: 65px;
+    left: 120px;
   }
   .foot .textocontacto .footerlink {
     color: white;
@@ -460,12 +462,13 @@
   }
   .foot .textocontacto #whatsapp {
     color: white;
-    font-size: 25px;
+    width: 200px;
+    font-size: 20px;
     margin-top: -20px;
   }
   .foot .textocontacto .footerlink {
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: -50px;
     margin-right: 130px;
     margin-left: 120px;
@@ -2227,7 +2230,7 @@
   .padre2 {
     display: grid;
     grid-template-areas: "header header header header" "barra barra barra barra" "formulario formulario formulario formulario" "contacto contacto contacto contacto";
-    grid-template-rows: auto 60px auto auto;
+    grid-template-rows: auto 250px auto auto;
     grid-template-columns: auto auto auto auto;
     /*contenido pagina contacto.html*/
   }
@@ -2279,7 +2282,7 @@
   .padre3 {
     display: grid;
     grid-template-areas: "header header header header" "barra barra barra barra" "mapa mapa mapa mapa  " "textoNosotros textoNosotros textoNosotros textoNosotros" "contacto contacto contacto contacto";
-    grid-template-rows: auto 60px 500px auto;
+    grid-template-rows: auto 250px 500px auto;
     grid-template-columns: auto auto auto auto;
     /*contenido nosotros.html*/
   }
@@ -2323,7 +2326,7 @@
     display: grid;
     grid-template-areas: "header header header header" "barra barra barra barra" " img img img img " "textoventa textoventa textoventa textoventa" "contacto contacto contacto contacto";
     background-color: #222124;
-    grid-template-rows: auto 60px 2000px auto;
+    grid-template-rows: auto 250px 2000px auto;
     grid-template-columns: auto auto auto auto;
     /*contenido pagina ofertas.html*/
   }
@@ -2335,7 +2338,7 @@
   .padre5 {
     display: grid;
     grid-template-areas: "header header header header" "barra barra barra barra" "img img img img" "textooferta textooferta textooferta textooferta" "contacto contacto contacto contacto";
-    grid-template-rows: auto 60px 2000px auto;
+    grid-template-rows: auto 250px 2000px auto;
     grid-template-columns: auto auto auto auto;
   }
   .padre5 div {
