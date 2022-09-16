@@ -10,7 +10,7 @@
   
   grid-area: header;
 display: flex;
-background-color: black;
+background-color: $botonCompra;
 height: 120px !important;
 
 justify-content: left;
@@ -38,7 +38,7 @@ justify-content: left;
   
 }
 #titulo{
-  color: white;
+  color: $colorLetra;
   font-size: 40px;
   text-shadow: 0 0 30px blue;
   position: relative;
@@ -68,7 +68,7 @@ justify-content: left;
   grid-area: barra;
   border-top:3px solid red;
   border-bottom: 3px solid $bordes;
-  background-color: black;
+  background-color: $botonCompra;
   .navbar-toggler{
     background-color: grey;
     
@@ -109,7 +109,7 @@ justify-content: left;
           padding-left: 30px;
           padding-right: 30px;
           background-color: #1C1B20;
-          border-bottom: 3px solid white;
+          border-bottom: 3px solid $bordes2;
           
           font-size: 20px;
         }
@@ -130,7 +130,7 @@ justify-content: left;
           padding-left: 30px;
           padding-right: 30px;
           background-color: #1C1B20;
-          border-bottom: 3px solid white;
+          border-bottom: 3px solid $bordes2;
           box-shadow:inset 5px 5px 20px 10px  blue ;
           font-size: 20px;
         }
@@ -176,7 +176,7 @@ justify-content: left;
   
   grid-area: header;
 display: flex;
-background-color: black;
+background-color: $botonCompra;
 height: 150px;
 width: 600px;
 justify-content: center;
@@ -204,7 +204,7 @@ justify-content: center;
   
 }
 #titulo{
-  color: white;
+  color: $colorLetra;
   font-size: 50px;
   text-shadow: 0 0 30px blue;
   
@@ -273,7 +273,7 @@ width: 600px;
           padding-left: 30px;
           padding-right: 30px;
           background-color: #1C1B20;
-          border-bottom: 3px solid white;
+          border-bottom: 3px solid $bordes2;
           font-size: 20px;
         }
   }
@@ -288,7 +288,7 @@ width: 600px;
           padding-left: 30px;
           padding-right: 30px;
           background-color: #1C1B20;
-          border-bottom: 3px solid white;
+          border-bottom: 3px solid $bordes2;
           box-shadow:inset 5px 5px 20px 10px  blue ;
           font-size: 20px;
         }
@@ -327,7 +327,7 @@ width: 600px;
   
   grid-area: header;
 display: flex;
-background-color: black;
+background-color: $botonCompra;
 height: 150px;
 
 justify-content: left;
@@ -355,7 +355,7 @@ justify-content: left;
   
 }
 #titulo{
-  color: white;
+  color: $colorLetra;
   font-size: 40px;
   text-shadow: 0 0 30px blue;
   
@@ -424,7 +424,7 @@ justify-content: left;
             padding-left: 30px;
             padding-right: 30px;
             background-color: #1C1B20;
-            border-bottom: 3px solid white;
+            border-bottom: 3px solid $bordes2;
             font-size: 20px;
           }
     }
@@ -439,7 +439,7 @@ justify-content: left;
             padding-left: 30px;
             padding-right: 30px;
             background-color: #1C1B20;
-            border-bottom: 3px solid white;
+            border-bottom: 3px solid $bordes2;
             box-shadow:inset 5px 5px 20px 10px  blue ;
             font-size: 20px;
           }
@@ -475,7 +475,7 @@ justify-content: left;
     
       grid-area: header;
       display: flex;
-      background-color: black;
+      background-color: $botonCompra;
       height: 150px;
       align-items: center;
       justify-content: center;
@@ -500,7 +500,7 @@ justify-content: left;
         
       }
       #titulo{
-        color: white;
+        color: $colorLetra;
         font-size: 50px;
         text-shadow: 0 0 30px blue;
         
@@ -529,7 +529,7 @@ justify-content: left;
         grid-area: barra;
         border-top:3px solid $bordes;
         border-bottom: 3px solid $bordes;
-        background-color: black;
+        background-color: $botonCompra;
         
         .enlacecontacto,
         .enlacecontacto2,
@@ -549,7 +549,7 @@ justify-content: left;
                 padding-left: 30px;
                 padding-right: 30px;
                 background-color: #1C1B20;
-                border-bottom: 3px solid white;
+                border-bottom: 3px solid $bordes2;
                 box-shadow:inset 5px 5px 20px 10px  blue ;
                 font-size: 27px;
               }
