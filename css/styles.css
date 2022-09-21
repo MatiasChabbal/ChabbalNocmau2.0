@@ -1,5 +1,5 @@
 /*estilos de la pagina index.html*/
-@media screen and (min-width: 1025px) and (max-width: 2000px) {
+@media screen and (min-width: 1025px) and (max-width: 4000px) {
   .padre1 {
     display: grid;
     grid-template-areas: "header header header header" "barra barra barra barra" "textoizq textoizq imagender imagender" "imagenetexto imagenetexto imagender imagender" "imagenetexto imagenetexto imagender imagender" "contacto contacto contacto contacto";
