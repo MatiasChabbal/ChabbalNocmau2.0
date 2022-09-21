@@ -15,7 +15,7 @@
         'contacto contacto contacto contacto';
         grid-template-rows: auto 160px  auto auto auto ;
         grid-template-columns: 60px 40px auto auto ;
-    }
+    
    
     .caja1{
       display: flex;
@@ -107,26 +107,22 @@
         position: relative;
         top: 100px;
       }
-    
-  
-    
-  
-   
-    
-    
-   
-    
-  
-  
-   
     body{
       margin: 0px;
-      
     }
-    
     }
+
+  }
     /*responsive contacto*/
-    
+    .padre2{
+      display: grid;
+      grid-template-areas:
+      'header header header header'
+      'barra barra barra barra'
+      'formulario formulario formulario formulario'
+      'contacto contacto contacto contacto';
+      grid-template-rows: auto 160px auto auto ;
+      grid-template-columns: 60px 220px 100px 100px;
     .formulario{
       display: flex;
     justify-content: center;
@@ -212,15 +208,7 @@
       box-shadow:inset 5px 5px 20px 10px blue ;
       font-size: 12px;
     }
-    .padre2{
-      display: grid;
-      grid-template-areas:
-      'header header header header'
-      'barra barra barra barra'
-      'formulario formulario formulario formulario'
-      'contacto contacto contacto contacto';
-      grid-template-rows: auto 160px auto auto ;
-      grid-template-columns: 60px 220px 100px 100px;
+    
     }
     /*responsive nosotros*/
     .mapa{

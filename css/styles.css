@@ -1031,7 +1031,7 @@
     top: 400px;
   }
 }
-@media screen and (min-width: 1025px) and (max-width: 2000px) {
+@media screen and (min-width: 1025px) and (max-width: 4000px) {
   .padre1,
 .padre2,
 .padre3,
@@ -1250,7 +1250,7 @@
     grid-template-rows: auto 160px auto auto auto;
     grid-template-columns: 60px 40px auto auto;
   }
-  .caja1 {
+  .padre1 .caja1 {
     display: flex;
     justify-content: center;
     width: 480px;
@@ -1258,10 +1258,10 @@
     background-color: #222124;
     height: 600px;
   }
-  .caja1 .cajatexto {
+  .padre1 .caja1 .cajatexto {
     background-color: #222124;
   }
-  .caja1 .cajatexto .textocaja1 {
+  .padre1 .caja1 .cajatexto .textocaja1 {
     font-size: 17px;
     color: #fff;
     margin-top: 20px;
@@ -1274,7 +1274,7 @@
     top: 200px;
     background-color: #222124;
   }
-  .caja2 {
+  .padre1 .caja2 {
     display: flex;
     width: 480px;
     flex-direction: column;
@@ -1285,22 +1285,22 @@
     border-left: none;
     border-right: none;
   }
-  .caja2 .imagenes {
+  .padre1 .caja2 .imagenes {
     border: 1px solid orange;
     border-radius: 50%;
     margin: 10px;
     margin-right: 50px;
   }
-  .caja2 #imagen1 {
+  .padre1 .caja2 #imagen1 {
     width: 100px;
   }
-  .caja2 #imagen2 {
+  .padre1 .caja2 #imagen2 {
     width: 200px;
   }
-  .caja2 #imagen3 {
+  .padre1 .caja2 #imagen3 {
     width: 140px;
   }
-  .caja3 {
+  .padre1 .caja3 {
     display: flex;
     flex-direction: column;
     grid-area: imagenetexto;
@@ -1310,7 +1310,7 @@
     width: 480px;
     height: 800px;
   }
-  .caja3 .imagen789 {
+  .padre1 .caja3 .imagen789 {
     display: flex;
     flex-direction: column;
     width: 250px;
@@ -1320,7 +1320,7 @@
     top: 100px;
     right: 0px;
   }
-  .caja3 .textoImagen {
+  .padre1 .caja3 .textoImagen {
     display: flex;
     flex-direction: column;
     color: #fff;
@@ -1329,11 +1329,17 @@
     position: relative;
     top: 100px;
   }
-  .caja3 body {
+  .padre1 .caja3 body {
     margin: 0px;
   }
   /*responsive contacto*/
-  .formulario {
+  .padre2 {
+    display: grid;
+    grid-template-areas: "header header header header" "barra barra barra barra" "formulario formulario formulario formulario" "contacto contacto contacto contacto";
+    grid-template-rows: auto 160px auto auto;
+    grid-template-columns: 60px 220px 100px 100px;
+  }
+  .padre2 .formulario {
     display: flex;
     justify-content: center;
     grid-area: formulario;
@@ -1341,12 +1347,12 @@
     position: relative;
     height: 800px;
   }
-  .formulario .cajacontacto {
+  .padre2 .formulario .cajacontacto {
     display: flex;
     position: relative;
     top: 100px;
   }
-  .formulario #contacto_nav {
+  .padre2 .formulario #contacto_nav {
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -1356,23 +1362,23 @@
     border: 2px solid red;
     margin-top: 50px;
   }
-  .formulario .formulario2 {
+  .padre2 .formulario .formulario2 {
     display: flex;
     flex-direction: column;
     color: #fff;
     font-size: 12px;
   }
-  .formulario .formulario1 {
+  .padre2 .formulario .formulario1 {
     width: 90px;
     font-size: 10px;
   }
-  .formulario #label_comentario {
+  .padre2 .formulario #label_comentario {
     color: #fff;
     font-size: 12px;
     margin-top: 10px;
     margin-left: 20px;
   }
-  .formulario #comentario {
+  .padre2 .formulario #comentario {
     border-radius: 10px;
     width: 150px;
     height: 150px;
@@ -1380,14 +1386,14 @@
     top: 15px;
     left: 50px;
   }
-  .formulario #enviar {
+  .padre2 .formulario #enviar {
     position: relative;
     top: 30px;
     left: 100px;
     width: 50px;
     font-size: 10px;
   }
-  .enlacecontacto {
+  .padre2 .enlacecontacto {
     display: inline-flex;
     padding-left: 5px;
     padding-right: 5px;
@@ -1396,7 +1402,7 @@
     bottom: 30px;
     font-size: 9px;
   }
-  .enlacecontacto:hover {
+  .padre2 .enlacecontacto:hover {
     text-decoration: none;
     color: #fff;
     padding-left: 5px;
@@ -1405,12 +1411,6 @@
     border-bottom: 3px solid #fff;
     box-shadow: inset 5px 5px 20px 10px blue;
     font-size: 12px;
-  }
-  .padre2 {
-    display: grid;
-    grid-template-areas: "header header header header" "barra barra barra barra" "formulario formulario formulario formulario" "contacto contacto contacto contacto";
-    grid-template-rows: auto 160px auto auto;
-    grid-template-columns: 60px 220px 100px 100px;
   }
   /*responsive nosotros*/
   .mapa {
@@ -2339,7 +2339,7 @@
     color: red;
   }
 }
-@media screen and (min-width: 1025px) and (max-width: 2000px) {
+@media screen and (min-width: 1025px) and (max-width: 4000px) {
   .foot {
     display: flex;
     flex-direction: column;
