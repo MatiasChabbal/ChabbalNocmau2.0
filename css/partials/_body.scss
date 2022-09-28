@@ -397,16 +397,13 @@
     grid-area: textoizq;
     background-color:#222124;
     height: 600px;
-    width: 600px;
+   
     .cajatexto{
       background-color: #222124;
     .textocaja1{
       font-size: 17px;
       color: $colorLetra;
       margin-top: 20px;
-      margin-left: 0px;
-      position: relative;
-      left: 10px;
       text-align: left;
       width: 500px;
       border: 1px solid red;
@@ -419,7 +416,7 @@
   }
   
   .caja2{
-    width: 600px;
+    
     display: flex;
     justify-content: center;
     grid-area: imagender;
@@ -461,7 +458,7 @@
     justify-content: flex-start;
     align-items: center;
     height: 800px;
-    width: 600px;
+   
     .imagen789{
       display: flex;
       flex-direction: column;
@@ -779,7 +776,7 @@
   }
   
 }
-  @media screen and (min-width: 601px ) and (max-width: 1024px){
+  @media screen and (min-width: 601px ) and (max-width: 1473px){
     .padre1{
       display: grid;
       grid-template-areas:

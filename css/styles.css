@@ -1,5 +1,5 @@
 /*estilos de la pagina index.html*/
-@media screen and (min-width: 1025px) and (max-width: 4000px) {
+@media screen and (min-width: 1474px) and (max-width: 4000px) {
   .padre1 {
     display: grid;
     grid-template-areas: "header header header header" "barra barra barra barra" "textoizq textoizq imagender imagender" "imagenetexto imagenetexto imagender imagender" "imagenetexto imagenetexto imagender imagender" "contacto contacto contacto contacto";
@@ -121,6 +121,9 @@
   }
   .padre2 .formulario #enviar {
     width: 70px;
+    position: relative;
+    top: 10px;
+    left: 30px;
   }
   /*estilos de la pagina nosotros.html*/
   .padre3 {
@@ -803,7 +806,8 @@
     display: flex;
     background-color: #000;
     height: 150px;
-    justify-content: left;
+    align-items: center;
+    justify-content: center;
   }
   .padre1 .header .fondologo,
 .padre2 .header .fondologo,
@@ -927,7 +931,7 @@
     text-decoration: none;
     width: 100px;
     position: relative;
-    left: 105px;
+    left: 80px;
     font-size: 20px;
   }
   .padre1 .enlacecontacto2:hover,
@@ -1563,7 +1567,6 @@
     grid-area: textoizq;
     background-color: #222124;
     height: 600px;
-    width: 600px;
   }
   .padre1 .caja1 .cajatexto {
     background-color: #222124;
@@ -1572,9 +1575,6 @@
     font-size: 17px;
     color: #fff;
     margin-top: 20px;
-    margin-left: 0px;
-    position: relative;
-    left: 10px;
     text-align: left;
     width: 500px;
     border: 1px solid red;
@@ -1584,7 +1584,6 @@
     background-color: #222124;
   }
   .padre1 .caja2 {
-    width: 600px;
     display: flex;
     justify-content: center;
     grid-area: imagender;
@@ -1619,7 +1618,6 @@
     justify-content: flex-start;
     align-items: center;
     height: 800px;
-    width: 600px;
   }
   .padre1 .caja3 .imagen789 {
     display: flex;
@@ -1898,7 +1896,7 @@
     grid-template-columns: auto auto auto auto;
   }
 }
-@media screen and (min-width: 601px) and (max-width: 1024px) {
+@media screen and (min-width: 601px) and (max-width: 1473px) {
   .padre1 {
     display: grid;
     grid-template-areas: "header header header header" "barra barra barra barra" "textoizq textoizq textoizq textoizq" "imagender imagender imagender imagender" "imagenetexto imagenetexto imagenetexto imagenetexto" "contacto contacto contacto contacto";
@@ -2249,11 +2247,13 @@
     position: relative;
     left: 120px;
     bottom: 20px;
+    width: 120px;
   }
   .foot .textocontacto #instagram {
     position: relative;
     top: 65px;
     left: 120px;
+    width: 120px;
   }
   .foot .textocontacto .footerlink {
     color: #fff;
@@ -2280,7 +2280,7 @@
   .foot #imagen4 {
     width: 40px;
     margin-right: 100px;
-    margin-left: 100px;
+    margin-left: 70px;
   }
   .foot #imagen5 {
     width: 70px;
@@ -2306,10 +2306,8 @@
     color: #fff;
     font-size: 20px;
     margin-top: -50px;
-    margin-right: 130px;
-    margin-left: 120px;
-    position: relative;
-    left: 100px;
+    margin-right: 100px;
+    margin-left: 80px;
   }
   .foot .textocontacto .footerlink:hover {
     color: red;

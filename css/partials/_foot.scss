@@ -124,13 +124,14 @@
         position: relative;
         left: 120px;
         bottom: 20px;
+        width: 120px;
        }
 
        #instagram{
         position: relative;
         top: 65px;
         left: 120px;
-        
+        width: 120px;
        }
           .footerlink{
             color: $colorLetra;
@@ -160,7 +161,7 @@
     #imagen4{
         width: 40px;
         margin-right: 100px;
-        margin-left: 100px;
+        margin-left: 70px;
       }
       #imagen5{
         width: 70px;
@@ -182,14 +183,14 @@
             font-size: 20px;
             margin-top: -20px;
           }
+          
           .footerlink{
             color: $colorLetra;
             font-size: 20px;
             margin-top: -50px;
-            margin-right: 130px;
-            margin-left: 120px;
-            position: relative;
-            left: 100px;
+            margin-right: 100px;
+            margin-left: 80px;
+            
             &:hover{
                 color: red;
               }

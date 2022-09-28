@@ -1,5 +1,5 @@
 /*estilos de la pagina index.html*/
-@media screen and (min-width: 1025px) and (max-width: 4000px){
+@media screen and (min-width: 1474px) and (max-width: 4000px){
   
 
     .padre1{
@@ -141,7 +141,11 @@
             left: 20px;
           }
           #enviar{
+            
             width: 70px;
+            position: relative;
+            top: 10px;
+            left:30px;
           }
       
       }
