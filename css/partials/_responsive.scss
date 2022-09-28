@@ -10,7 +10,7 @@
   
   grid-area: header;
 display: flex;
-background-color: $botonCompra;
+background-color: black;
 height: 120px !important;
 
 justify-content: left;
@@ -38,7 +38,7 @@ justify-content: left;
   
 }
 #titulo{
-  color: $colorLetra;
+  color: white;
   font-size: 40px;
   text-shadow: 0 0 30px blue;
   position: relative;
@@ -68,7 +68,7 @@ justify-content: left;
   grid-area: barra;
   border-top:3px solid red;
   border-bottom: 3px solid $bordes;
-  background-color: $botonCompra;
+  background-color: black;
   .navbar-toggler{
     background-color: grey;
     
@@ -77,6 +77,8 @@ justify-content: left;
   .enlacecontacto2{
     text-decoration: none;
       width: 150px;
+      
+     
     position: relative;
     left: 105px;
   bottom: 30px;
@@ -86,15 +88,18 @@ justify-content: left;
         color:$colorLetra;
         padding-left: 30px;
         padding-right: 30px;
+        
+        
+        
         font-size: 20px;
       }
   }
   .enlacecontacto{
     text-decoration: none;
+      
+      
      width: 200px;
-     position: relative;
-     
-   bottom: 30px;
+      position: relative;
       left: 100px;
     
       font-size: 20px;
@@ -104,7 +109,7 @@ justify-content: left;
           padding-left: 30px;
           padding-right: 30px;
           background-color: #1C1B20;
-          border-bottom: 3px solid $bordes2;
+          border-bottom: 3px solid white;
           
           font-size: 20px;
         }
@@ -113,6 +118,11 @@ justify-content: left;
   #ofertas{
     text-decoration: none;
       
+      
+     
+      position: relative;
+      
+    
       font-size: 20px;
       &:hover{
           text-decoration: none;
@@ -120,7 +130,7 @@ justify-content: left;
           padding-left: 30px;
           padding-right: 30px;
           background-color: #1C1B20;
-          border-bottom: 3px solid $bordes2;
+          border-bottom: 3px solid white;
           box-shadow:inset 5px 5px 20px 10px  blue ;
           font-size: 20px;
         }
@@ -129,7 +139,7 @@ justify-content: left;
       
      
       
-     
+      display: flex none;
       align-items: center;
       background-color: #1C1B20;
       width: 200px;
@@ -166,7 +176,7 @@ justify-content: left;
   
   grid-area: header;
 display: flex;
-background-color: $botonCompra;
+background-color: black;
 height: 150px;
 width: 600px;
 justify-content: center;
@@ -194,7 +204,7 @@ justify-content: center;
   
 }
 #titulo{
-  color: $colorLetra;
+  color: white;
   font-size: 50px;
   text-shadow: 0 0 30px blue;
   
@@ -263,7 +273,7 @@ width: 600px;
           padding-left: 30px;
           padding-right: 30px;
           background-color: #1C1B20;
-          border-bottom: 3px solid $bordes2;
+          border-bottom: 3px solid white;
           font-size: 20px;
         }
   }
@@ -278,13 +288,13 @@ width: 600px;
           padding-left: 30px;
           padding-right: 30px;
           background-color: #1C1B20;
-          border-bottom: 3px solid $bordes2;
+          border-bottom: 3px solid white;
           box-shadow:inset 5px 5px 20px 10px  blue ;
           font-size: 20px;
         }
     }
     .dropdown-menu{
-      
+      display: flex none;
       align-items: center;
       background-color: #1C1B20;
       width: 200px;
@@ -317,7 +327,7 @@ width: 600px;
   
   grid-area: header;
 display: flex;
-background-color: $botonCompra;
+background-color: black;
 height: 150px;
 
 justify-content: left;
@@ -345,7 +355,7 @@ justify-content: left;
   
 }
 #titulo{
-  color: $colorLetra;
+  color: white;
   font-size: 40px;
   text-shadow: 0 0 30px blue;
   
@@ -403,7 +413,7 @@ justify-content: left;
         }
     }
     .enlacecontacto{
-        text-decoration: none;
+      text-decoration: none;
         position: relative;
         left: 100px;
         font-size: 20px;
@@ -414,7 +424,7 @@ justify-content: left;
             padding-left: 30px;
             padding-right: 30px;
             background-color: #1C1B20;
-            border-bottom: 3px solid $bordes2;
+            border-bottom: 3px solid white;
             font-size: 20px;
           }
     }
@@ -429,13 +439,13 @@ justify-content: left;
             padding-left: 30px;
             padding-right: 30px;
             background-color: #1C1B20;
-            border-bottom: 3px solid $bordes2;
+            border-bottom: 3px solid white;
             box-shadow:inset 5px 5px 20px 10px  blue ;
             font-size: 20px;
           }
       }
       .dropdown-menu{
-        
+        display: flex none;
         align-items: center;
         background-color: #1C1B20;
         width: 200px;
@@ -455,7 +465,7 @@ justify-content: left;
       
   }
 }
-@media screen and (min-width: 1025px) and (max-width: 4000px) {
+@media screen and (min-width: 1025px) and (max-width: 2000px) {
   .padre1,
   .padre2,
   .padre3,
@@ -465,7 +475,7 @@ justify-content: left;
     
       grid-area: header;
       display: flex;
-      background-color: $botonCompra;
+      background-color: black;
       height: 150px;
       align-items: center;
       justify-content: center;
@@ -490,7 +500,7 @@ justify-content: left;
         
       }
       #titulo{
-        color: $colorLetra;
+        color: white;
         font-size: 50px;
         text-shadow: 0 0 30px blue;
         
@@ -519,7 +529,7 @@ justify-content: left;
         grid-area: barra;
         border-top:3px solid $bordes;
         border-bottom: 3px solid $bordes;
-        background-color: $botonCompra;
+        background-color: black;
         
         .enlacecontacto,
         .enlacecontacto2,
@@ -532,14 +542,14 @@ justify-content: left;
            
             position: relative;
            bottom: 40px;
-            font-size: 25px;
+            font-size: 30px;
             &:hover{
                 text-decoration: none;
-                
+                color:$colorLetra;
                 padding-left: 30px;
                 padding-right: 30px;
                 background-color: #1C1B20;
-                border-bottom: 3px solid $bordes2;
+                border-bottom: 3px solid white;
                 box-shadow:inset 5px 5px 20px 10px  blue ;
                 font-size: 27px;
               }
@@ -550,7 +560,6 @@ justify-content: left;
             color: $colorLetra;
             
           }
-          
           .dropdown-menu{
             background-color: #1C1B20;
             border: 1px solid red;
@@ -561,7 +570,7 @@ justify-content: left;
             position: relative;
             top: 10px;
           }
-         
+          
     }
   }
        

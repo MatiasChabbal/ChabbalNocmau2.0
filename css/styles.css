@@ -9,7 +9,6 @@
   }
   .padre1 div {
     padding: 20px;
-    font-size: 30px;
   }
   .padre1 .caja1 {
     grid-area: textoizq;
@@ -463,6 +462,7 @@
     text-decoration: none;
     width: 200px;
     position: relative;
+    bottom: 30px;
     left: 100px;
     font-size: 20px;
   }
@@ -490,7 +490,6 @@
 .padre5 #tienda,
 .padre5 #ofertas {
     text-decoration: none;
-    position: relative;
     font-size: 20px;
   }
   .padre1 #tienda:hover,
@@ -517,7 +516,6 @@
 .padre3 .dropdown-menu,
 .padre4 .dropdown-menu,
 .padre5 .dropdown-menu {
-    display: flex none;
     align-items: center;
     background-color: #1C1B20;
     width: 200px;
@@ -763,7 +761,6 @@
 .padre3 .dropdown-menu,
 .padre4 .dropdown-menu,
 .padre5 .dropdown-menu {
-    display: flex none;
     align-items: center;
     background-color: #1C1B20;
     width: 200px;
@@ -1006,7 +1003,6 @@
 .padre3 .dropdown-menu,
 .padre4 .dropdown-menu,
 .padre5 .dropdown-menu {
-    display: flex none;
     align-items: center;
     background-color: #1C1B20;
     width: 200px;
@@ -1181,7 +1177,7 @@
     padding-right: 30px;
     position: relative;
     bottom: 40px;
-    font-size: 30px;
+    font-size: 25px;
   }
   .padre1 .navegacion .enlacecontacto:hover,
 .padre1 .navegacion .enlacecontacto2:hover,
@@ -1204,7 +1200,6 @@
 .padre5 .navegacion #tienda:hover,
 .padre5 .navegacion #ofertas:hover {
     text-decoration: none;
-    color: #fff;
     padding-left: 30px;
     padding-right: 30px;
     background-color: #1C1B20;
@@ -1247,7 +1242,7 @@
   .padre1 {
     display: grid;
     grid-template-areas: "header header header header" "barra barra barra barra" "textoizq textoizq textoizq textoizq" "imagender imagender imagender imagender" "imagenetexto imagenetexto imagenetexto imagenetexto" "contacto contacto contacto contacto";
-    grid-template-rows: auto 160px auto auto auto;
+    grid-template-rows: auto 190px auto auto auto;
     grid-template-columns: 60px 40px auto auto;
   }
   .padre1 .caja1 {
@@ -1392,25 +1387,6 @@
     left: 100px;
     width: 50px;
     font-size: 10px;
-  }
-  .padre2 .enlacecontacto {
-    display: inline-flex;
-    padding-left: 5px;
-    padding-right: 5px;
-    position: relative;
-    left: -20px;
-    bottom: 30px;
-    font-size: 9px;
-  }
-  .padre2 .enlacecontacto:hover {
-    text-decoration: none;
-    color: #fff;
-    padding-left: 5px;
-    padding-right: 5px;
-    background-color: #1C1B20;
-    border-bottom: 3px solid #fff;
-    box-shadow: inset 5px 5px 20px 10px blue;
-    font-size: 12px;
   }
   /*responsive nosotros*/
   .mapa {
@@ -1925,7 +1901,7 @@
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   .padre1 {
     display: grid;
-    grid-template-areas: "header header header header" "barra barra barra barra" "textoizq textoizq imagender imagender" "imagenetexto imagenetexto imagender imagender" "imagenetexto imagenetexto imagender imagender" "contacto contacto contacto contacto";
+    grid-template-areas: "header header header header" "barra barra barra barra" "textoizq textoizq textoizq textoizq" "imagender imagender imagender imagender" "imagenetexto imagenetexto imagenetexto imagenetexto" "contacto contacto contacto contacto";
     grid-template-rows: auto 250px auto auto auto;
     grid-template-columns: auto auto auto auto;
     /*contenido index*/
@@ -1937,12 +1913,13 @@
   .padre1 .caja1 {
     grid-area: textoizq;
     background-color: #222124;
+    display: flex;
+    justify-content: center;
   }
   .padre1 .caja1 .textocaja1 {
     font-size: 17px;
     color: #fff;
     margin-top: 100px;
-    margin-left: 100px;
     text-align: left;
     width: 500px;
     border: 1px solid red;
@@ -1954,29 +1931,28 @@
   }
   .padre1 .caja2 {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    flex-direction: row;
     grid-area: imagender;
     background-color: #222124;
     align-items: center;
     border: 2px solid red;
-    border-top: none;
-    border-bottom: none;
+    border-right: none;
+    border-left: none;
   }
   .padre1 .caja2 .imagenes {
     border: 2px solid #fff;
     border-radius: 50%;
     margin: 10px;
-    margin-left: -60px;
-    margin-right: -60px;
   }
   .padre1 .caja2 #imagen1 {
-    width: 150px;
+    width: 200px;
   }
   .padre1 .caja2 #imagen2 {
-    width: 200px;
+    width: 250px;
   }
   .padre1 .caja2 #imagen3 {
-    width: 200px;
+    width: 250px;
   }
   .padre1 .caja3 {
     display: flex;

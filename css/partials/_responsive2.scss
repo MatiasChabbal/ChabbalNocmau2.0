@@ -13,9 +13,9 @@
         'imagender imagender imagender imagender'
         'imagenetexto imagenetexto imagenetexto imagenetexto'
         'contacto contacto contacto contacto';
-        grid-template-rows: auto 190px  auto auto auto ;
+        grid-template-rows: auto 160px  auto auto auto ;
         grid-template-columns: 60px 40px auto auto ;
-    
+    }
    
     .caja1{
       display: flex;
@@ -29,7 +29,7 @@
         background-color: #222124;
       .textocaja1{
         font-size: 17px;
-        color: $colorLetra;
+        color: white;
         margin-top: 20px;
         margin-left: 0px;
         
@@ -101,28 +101,32 @@
       .textoImagen{
         display: flex;
         flex-direction: column;
-        color: $colorLetra;
+        color: white;
         width: 250px;
         font-size: 15px;
         position: relative;
         top: 100px;
       }
+    
+  
+    
+  
+   
+    
+    
+   
+    
+  
+  
+   
     body{
       margin: 0px;
+      
     }
+    
     }
-
-  }
     /*responsive contacto*/
-    .padre2{
-      display: grid;
-      grid-template-areas:
-      'header header header header'
-      'barra barra barra barra'
-      'formulario formulario formulario formulario'
-      'contacto contacto contacto contacto';
-      grid-template-rows: auto 160px auto auto ;
-      grid-template-columns: 60px 220px 100px 100px;
+    
     .formulario{
       display: flex;
     justify-content: center;
@@ -151,7 +155,7 @@
     .formulario2{
       display: flex;
       flex-direction: column;
-      color: $colorLetra;
+      color: white;
       font-size: 12px;
       
     }
@@ -163,7 +167,7 @@
   
   
     #label_comentario{
-      color: $colorLetra;
+      color: white;
       font-size: 12px;
       margin-top: 10px;
       margin-left: 20px;
@@ -189,8 +193,34 @@
   
     }
   }
-   
-    
+    .enlacecontacto{
+      display: inline-flex;
+      padding-left: 5px;
+      padding-right: 5px;
+      position: relative;
+      left: -20px;
+      bottom: 30px;
+      font-size: 9px;
+    }
+    .enlacecontacto:hover{
+      text-decoration: none;
+      color:white;
+      padding-left: 5px;
+      padding-right: 5px;
+      background-color: #1C1B20;
+      border-bottom: 3px solid white;
+      box-shadow:inset 5px 5px 20px 10px blue ;
+      font-size: 12px;
+    }
+    .padre2{
+      display: grid;
+      grid-template-areas:
+      'header header header header'
+      'barra barra barra barra'
+      'formulario formulario formulario formulario'
+      'contacto contacto contacto contacto';
+      grid-template-rows: auto 160px auto auto ;
+      grid-template-columns: 60px 220px 100px 100px;
     }
     /*responsive nosotros*/
     .mapa{
@@ -215,7 +245,7 @@
       flex-direction: column;
       
   
-      color: $colorLetra;
+      color: white;
       font-size: 15px;
     }
     #mapa1{
@@ -233,7 +263,7 @@
       display: flex;
       line-height: 30px;
       margin-top: 0px;
-      color: $colorLetra;
+      color: white;
       font-size: 12px;
       justify-content: flex-start;
       margin-left: -20px;
@@ -261,7 +291,7 @@
     }
     .texto-venta{
       grid-area: textoventa;
-      color: $colorLetra;
+      color: white;
       font-size: 10px;
       position:relative;
       
@@ -300,8 +330,8 @@
     
   
     .btn-comprar:hover {
-        background: $botonCompra;
-        color: $colorLetra;
+        background: black;
+        color: white;
         box-shadow: 2px 2px 10px 0px rgba(255, 59, 38, 10.0);
     }
     .imgVenta1{
@@ -335,7 +365,7 @@
     }
     .texto-oferta{
       grid-area: textooferta;
-      color: $colorLetra;
+      color: white;
       font-size: 13px;
       position:relative;
       top: 200px;
@@ -402,7 +432,7 @@
       background-color: #222124;
     .textocaja1{
       font-size: 17px;
-      color: $colorLetra;
+      color: white;
       margin-top: 20px;
       margin-left: 0px;
       position: relative;
@@ -475,7 +505,7 @@
     .textoImagen{
       display: flex;
       flex-direction: column;
-      color: $colorLetra;
+      color: white;
       width: 250px;
       font-size: 15px;
       position: relative;
@@ -494,6 +524,7 @@
   .formulario{
     display: flex;
     justify-content: center;
+    
     grid-area: formulario;
     background-color: #222124;
     position: relative;
@@ -503,7 +534,7 @@
       position: relative;
       top: 100px;
       
-    }
+  }
   #contacto_nav{
     display: flex;
     flex-direction: column;
@@ -518,7 +549,7 @@
   .formulario2{
     display: flex;
     flex-direction: column;
-    color: $colorLetra;
+    color: white;
     font-size: 12px;
     
   }
@@ -530,7 +561,7 @@
 
 
   #label_comentario{
-    color: $colorLetra;
+    color: white;
     font-size: 12px;
     margin-top: 10px;
     margin-left: 20px;
@@ -567,11 +598,11 @@
   }
   .enlacecontacto:hover{
     text-decoration: none;
-    color:$colorLetra;
+    color:white;
     padding-left: 5px;
     padding-right: 5px;
     background-color: #1C1B20;
-    border-bottom: 3px solid $bordes2;
+    border-bottom: 3px solid white;
     box-shadow:inset 5px 5px 20px 10px blue ;
     font-size: 12px;
   }
@@ -607,7 +638,7 @@
     flex-direction: column;
     
 
-    color: $colorLetra;
+    color: white;
     font-size: 15px;
   }
   #mapa1{
@@ -625,7 +656,7 @@
     display: flex;
     line-height: 30px;
     margin-top: 0px;
-    color: $colorLetra;
+    color: white;
     font-size: 12px;
     justify-content: flex-start;
     margin-left: -20px;
@@ -653,7 +684,7 @@
   }
   .texto-venta{
     grid-area: textoventa;
-    color: $colorLetra;
+    color: white;
     font-size: 10px;
     position:relative;
     
@@ -698,7 +729,7 @@
       padding: 10px;
       font-size: 12px;
       color: red;
-      background: $botonCompra;
+      background: black;
       box-shadow: 2px 2px 10px 0px rgba(0,85,212,10.0);
     cursor: pointer;
     position: relative;
@@ -706,8 +737,8 @@
   }
 
   .btn-comprar:hover {
-      background: $botonCompra;
-      color: $colorLetra;
+      background: black;
+      color: white;
       box-shadow: 2px 2px 10px 0px rgba(255, 59, 38, 10.0);
   }
   .imgVenta1{
@@ -741,7 +772,7 @@
   }
   .texto-oferta{
     grid-area: textooferta;
-    color: $colorLetra;
+    color: white;
     font-size: 13px;
     position:relative;
     top: 200px;
@@ -785,9 +816,9 @@
       grid-template-areas:
       'header header header header'
       'barra barra barra barra'
-      'textoizq textoizq textoizq textoizq'
-      'imagender imagender imagender imagender'
-      'imagenetexto imagenetexto imagenetexto imagenetexto'
+      'textoizq textoizq imagender imagender'
+      'imagenetexto imagenetexto imagender imagender'
+      'imagenetexto imagenetexto imagender imagender'
       'contacto contacto contacto contacto';
       grid-template-rows: auto 250px auto auto auto;
       grid-template-columns: auto auto auto auto;
@@ -801,15 +832,12 @@
     .caja1{
       grid-area: textoizq;
       background-color: $colorFondo;
-      display: flex;
-      justify-content: center;
+      
       .textocaja1{
-        
-       
           font-size: 17px;
           color:  $colorLetra;
           margin-top: 100px;
-          
+          margin-left: 100px;
           text-align: left;
           width: 500px;
           border: 1px solid $bordes;
@@ -822,29 +850,30 @@
     }
     .caja2{
       display: $display;
-      justify-content: center;
-      flex-direction:row;
+      
+      flex-direction: column;
       grid-area: imagender;
       background-color: $colorFondo;
       align-items: center;
       border: 2px solid $bordes;
-      border-right: none;
-      border-left: none;
+      border-top: none;
+      border-bottom: none;
       
         .imagenes{
-          border: 2px solid $bordes2;
+          border: 2px solid white;
           border-radius: 50%;
           margin: 10px;
-          
+          margin-left: -60px;
+          margin-right: -60px;
         }
         #imagen1{
-          width: 200px;
+          width: 150px;
         }
         #imagen2{
-            width: 250px;
+            width: 200px;
         }
         #imagen3{
-          width: 250px;
+          width: 200px;
         }
     }
     
