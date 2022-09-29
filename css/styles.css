@@ -2074,7 +2074,6 @@
   }
   .padre4 div {
     padding: 20px;
-    font-size: 20px;
   }
   /*estilos de la pagina tienda.html*/
   .padre5 {
@@ -2085,12 +2084,11 @@
   }
   .padre5 div {
     padding: 20px;
-    font-size: 20px;
   }
   /*contenido pagina tienda.html*/
   .apartadoventas {
     background-color: #222124;
-    width: 1040px;
+    width: 1039px;
   }
   .apartadoventas .ventas {
     display: flex;
@@ -2170,17 +2168,19 @@
   .foot .textocontacto #whatsapp {
     color: #fff;
     font-size: 14px;
-    width: 200px !important;
+    width: 150px !important;
     position: relative;
     left: 150px;
     bottom: 130px;
   }
   .foot .textocontacto #facebook {
+    width: 150px;
     position: relative;
     left: 50px;
     bottom: 10px;
   }
   .foot .textocontacto #instagram {
+    width: 150px;
     position: relative;
     top: 100px;
     left: 50px;
