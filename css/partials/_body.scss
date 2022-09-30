@@ -277,7 +277,7 @@
       
         background-color: #222124;
         width: 480px;
-        height: 1400px;
+        height: 2000px;
     }
   
     .ventas{
@@ -666,7 +666,7 @@
     
       background-color: #222124;
       width: 600px;
-      height: 1400px;
+      height: 2000px;
   }
 
   .ventas{
@@ -997,7 +997,7 @@
         'contacto contacto contacto contacto';
         background-color: $colorFondo;
         grid-template-rows: auto 250px 2000px auto ;
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: 1205px auto auto auto;
         div {
             padding: 20px ;
             
@@ -1021,7 +1021,7 @@
       'textooferta textooferta textooferta textooferta'
       'contacto contacto contacto contacto';
       grid-template-rows: auto 250px 2000px auto ;
-      grid-template-columns: auto auto auto auto;
+      grid-template-columns: 1205px auto auto auto;
         div {
             padding: 20px ;
             
@@ -1031,7 +1031,7 @@
       /*contenido pagina tienda.html*/
       .apartadoventas{
         background-color: $colorFondo;
-        width: 1039px;
+       
         
         .ventas{
             display: $display;

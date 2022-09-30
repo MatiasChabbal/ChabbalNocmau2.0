@@ -1459,7 +1459,7 @@
     align-items: center;
     background-color: #222124;
     width: 480px;
-    height: 1400px;
+    height: 2000px;
   }
   .ventas {
     display: flex;
@@ -1788,7 +1788,7 @@
     align-items: center;
     background-color: #222124;
     width: 600px;
-    height: 1400px;
+    height: 2000px;
   }
   .ventas {
     display: flex;
@@ -2069,7 +2069,7 @@
     grid-template-areas: "header header header header" "barra barra barra barra" " img img img img " "textoventa textoventa textoventa textoventa" "contacto contacto contacto contacto";
     background-color: #222124;
     grid-template-rows: auto 250px 2000px auto;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 1205px auto auto auto;
     /*contenido pagina ofertas.html*/
   }
   .padre4 div {
@@ -2080,7 +2080,7 @@
     display: grid;
     grid-template-areas: "header header header header" "barra barra barra barra" "img img img img" "textooferta textooferta textooferta textooferta" "contacto contacto contacto contacto";
     grid-template-rows: auto 250px 2000px auto;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 1205px auto auto auto;
   }
   .padre5 div {
     padding: 20px;
@@ -2088,7 +2088,6 @@
   /*contenido pagina tienda.html*/
   .apartadoventas {
     background-color: #222124;
-    width: 1039px;
   }
   .apartadoventas .ventas {
     display: flex;
@@ -2278,17 +2277,17 @@
     justify-content: space-around;
   }
   .foot #imagen4 {
-    width: 40px;
+    width: 30px;
     margin-right: 100px;
     margin-left: 70px;
   }
   .foot #imagen5 {
-    width: 70px;
+    width: 40px;
     margin-right: 100px;
     margin-left: 100px;
   }
   .foot #imagen6 {
-    width: 80px;
+    width: 50px;
     margin-right: 100px;
     margin-left: 100px;
   }
